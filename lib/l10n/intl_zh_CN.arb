@@ -1,0 +1,9 @@
+{
+  "appName": "歧羊",
+  "changeDarkMode": "Light/Dark Mode",
+  "changeLanguage": "Language",
+  "darkMode": "Dark Mode",
+  "lightMode": "Light Mode",
+  "automatic": "Auto",
+  "startPage": "跳过 {seconds}"
+}
