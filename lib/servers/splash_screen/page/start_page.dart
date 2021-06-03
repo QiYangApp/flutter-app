@@ -9,7 +9,6 @@ import 'package:share_dream/servers/splash_screen/page/guide_page.dart';
 import 'package:share_dream/servers/splash_screen/widget/splash_screen_widget.dart';
 import 'package:share_dream/util/log_utils.dart';
 
-//todo 待优化。 先停用
 class StartPage extends StatefulWidget {
   @override
   _StartPage createState() => _StartPage();
@@ -27,14 +26,12 @@ class _StartPage extends State<StartPage> {
   Widget build(BuildContext context) {
     return BlocBuilder<StartPageBloc, StartPageState>(
       builder: (BuildContext context, state) {
-        Log.v(state);
-        Log.v(11111111);
         if (state is StartPageJumpHomePage) {
           return HomePage();
         }
 
         if (state is StartPageJumpGuidePage) {
-          return GuidePage(state.guidePageModel);
+          return GuidePage();
         }
 
         StartPageModel startPageModel =

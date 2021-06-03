@@ -13,12 +13,13 @@ class GuidePageConst {
   static final GuidePageModel guidePageModel = GuidePageModel(
       updatedAt: '1989-07-17 15:23:17',
       images: [
-        R.assetsImagesGuidePageGuide1,
-        R.assetsImagesGuidePageGuide2,
-        R.assetsImagesGuidePageGuide3,
+        Images(
+            title: "默认标题",
+            description: "说明",
+            order: 1,
+            url: R.assetsImagesGuidePageGuide1)
       ],
-      jumpPage: HomeRoutePath.home
-  );
+      jumpPage: HomeRoutePath.home);
 }
 
 //启动页固定常量

@@ -9,20 +9,23 @@ class ThemeConfig {
       foregroundColor: Colors.white,
     ),
     brightness: Brightness.light,
-    // textTheme: TextTheme().copyWith(
-    //     button: TextStyle(fontSize: 45)
+    // textTheme: TextTheme(
+    //     caption: TextStyle(color: Colors.black),
+    //     overline: TextStyle(color: Colors.black),
+    //     bodyText1: TextStyle(color: Colors.black),
+    //     button: TextStyle(fontSize: 45, color: Colors.black)
     // ),
   );
 
   //暗黑主题
-  static final ThemeData darkTheme = ThemeData.light().copyWith(
+  static final ThemeData darkTheme = ThemeData.dark().copyWith(
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       foregroundColor: Colors.black,
     ),
     brightness: Brightness.dark,
-    textTheme: TextTheme(
-        // button: TextStyle(fontSize: 45)
-    ),
+    // textTheme: TextTheme(
+    //     // button: TextStyle(fontSize: 45)
+    // ),
   );
 
 }

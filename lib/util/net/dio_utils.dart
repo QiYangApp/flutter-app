@@ -109,7 +109,6 @@ class DioUtils {
     );
     try {
       final String data = response.data.toString();
-      LogUtil.v(data, tag: 'api');
 
       /// 集成测试无法使用 isolate https://github.com/flutter/flutter/issues/24703
       /// 使用compute条件：数据大于10KB（粗略使用10 * 1024）且当前不是集成测试（后面可能会根据Web环境进行调整）
@@ -190,7 +189,6 @@ class DioUtils {
       options: options,
       cancelToken: cancelToken,
     )).asBroadcastStream().listen((result) {
-      LogUtil.v(result, tag: 'api');
       if (result.code == 0) {
         if (onSuccess != null) {
           onSuccess(result.data);

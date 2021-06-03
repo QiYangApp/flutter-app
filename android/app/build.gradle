@@ -37,6 +37,7 @@ android {
         applicationId "com.myadream.share_dream"
         minSdkVersion 18
         targetSdkVersion 30
+        multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }

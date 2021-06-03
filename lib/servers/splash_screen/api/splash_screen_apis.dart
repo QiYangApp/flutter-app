@@ -75,7 +75,7 @@ class GuidePageServer {
 
   //更改已读状态
   static changeForReadStatus() {
-    SpUtil.putBool(GuidePageConst.key_read_status, ReadingStatus.haveRead as bool);
+    SpUtil.putBool(GuidePageConst.key_read_status, true);
   }
 
   static cacheGuidePage() async {
@@ -114,7 +114,7 @@ class StartPageServer {
   static cacheStartPage() async {
     StartPageModel startPageModel = _getCache();
 
-    await SplashScreenRepository().startPage().then((value) {
+    SplashScreenRepository().startPage().then((value) {
       //判断是否需要更新。
       if (startPageModel.updatedAt != value.updatedAt) {
         SpUtil.putObject(StartPageConst.key, value);
@@ -137,6 +137,8 @@ class StartPageServer {
 
   //获取启动页面缓存数据
   static getCacheStartPage() {
-    return _getCache;
+    cacheStartPage();
+
+    return _getCache();
   }
 }

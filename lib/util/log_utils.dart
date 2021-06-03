@@ -1,8 +1,11 @@
 import 'dart:convert' as convert;
+import 'dart:developer';
 import 'package:common_utils/common_utils.dart';
 import 'package:share_dream/common/common.dart';
 
-class Log {
+
+//日志工具
+class Log  {
   static const String tag = 'DEER-LOG';
 
   static void init() {

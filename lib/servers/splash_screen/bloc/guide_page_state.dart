@@ -7,25 +7,15 @@ abstract class GuidePageState extends Equatable {
   List<Object> get props => [];
 }
 
-//阅读状态枚举
-enum ReadingStatus {
-  haveRead,  //已阅读状态
-  unRead //未阅读状态
-}
-
-extension ReadingStatusExtension on ReadingStatus {
-  get values => [true, false][index];
-}
-
 //初始化
 class GuidePageInitial extends GuidePageState {
   //是否阅读过引导页
-  final bool readingStatus;
+  final GuidePageModel guidePageModel;
 
-  GuidePageInitial(this.readingStatus);
+  GuidePageInitial(this.guidePageModel);
 
   @override
-  List<Object> get props => [readingStatus];
+  List<Object> get props => [guidePageModel];
 }
 
 //点击确认按钮状态

@@ -7,12 +7,13 @@ import 'package:share_dream/bloc/theme/theme_cubit.dart';
 import 'package:share_dream/common/common.dart';
 import 'package:share_dream/router/router.dart';
 import 'package:share_dream/servers/splash_screen/api/splash_screen_apis.dart';
-import 'package:share_dream/servers/splash_screen/bloc/guide_page_bloc.dart';
+import 'package:share_dream/servers/splash_screen/bloc/entrance_cubit.dart';
+import 'package:share_dream/servers/splash_screen/page/entrance_page.dart';
 
 import 'common/global.dart';
 import 'generated/l10n.dart';
 
-void main() {
+Future<void> main() async {
   Global.init(() {
     //设置像素自适应
     runApp(ScreenUtilInit(designSize: Size(375, 850), builder: () => App()));
@@ -24,11 +25,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
         providers: [
-          //全局状态或者事件1
+          //全局状态或者事件
           BlocProvider<AppBloc>(
-            create: (BuildContext context) {
-              return AppBloc(GuidePageServer.getReadStatus());
-            },
+            create: (BuildContext context) =>
+                AppBloc(),
           ),
           //全局主题
           BlocProvider<ThemeCubit>(
@@ -61,23 +61,11 @@ class AppView extends StatelessWidget {
         home: Scaffold(
           key: Constant.globalKey,
           body: SafeArea(
-            child: MultiBlocProvider(
-              providers: [
-                //引导页
-                BlocProvider.value(
-                    value: GuidePageBloc(GuidePageServer.getReadStatus()))
-              ],
-              child: BlocBuilder<GuidePageBloc, GuidePageState>(
-                builder: (BuildContext context, GuidePageState state) {
-                  // if () {
-                  //   return GuidePage(GuidePageServer.getCacheGuidePage())
-                  // }
-
-                  return Text("Hello World");
-                },
-              ),
-            ),
-          ),
+              child: BlocProvider(
+                  create: (BuildContext context) => EntranceCubit(
+                        GuidePageServer.getReadStatus(),
+                      ),
+                  child: EntrancePage())),
         ),
       );
     });
