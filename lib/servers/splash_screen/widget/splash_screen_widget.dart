@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:share_dream/generated/l10n.dart';
 import 'package:share_dream/util/hex_color.dart';
-import 'package:share_dream/util/log_utils.dart';
 import 'package:share_dream/util/time_util.dart';
 
 //回调用方法

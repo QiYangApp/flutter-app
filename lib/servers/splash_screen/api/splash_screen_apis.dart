@@ -1,9 +1,7 @@
 import 'package:share_dream/common/dioConfig.dart';
-import 'package:share_dream/servers/common/page/api/base_api.dart';
-import 'package:share_dream/servers/common/page/api/base_api_server.dart';
-import 'package:share_dream/servers/splash_screen/bloc/guide_page_bloc.dart';
+import 'package:share_dream/servers/common/api/base_api.dart';
+import 'package:share_dream/servers/common/api/base_api_server.dart';
 import 'package:share_dream/servers/splash_screen/model/splash_screen_model_index.dart';
-import 'package:share_dream/util/log_utils.dart';
 import 'package:share_dream/util/net/dio_utils.dart';
 import 'package:share_dream/util/sp_util.dart';
 

@@ -1,16 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:share_dream/r.dart';
-import 'package:share_dream/servers/home/router/home_route.dart';
 import 'package:share_dream/servers/splash_screen/bloc/guide_page_bloc.dart';
 import 'package:share_dream/servers/splash_screen/model/guide_page_model.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
-import 'package:share_dream/util/fluro_navigator.dart';
 import 'package:share_dream/util/hex_color.dart';
-import 'package:share_dream/util/log_utils.dart';
-import 'package:share_dream/util/sp_util.dart';
 
 class GuidePageWidget extends StatefulWidget {
   GuidePageModel guidePageModel;

@@ -5,5 +5,10 @@
   "darkMode": "Dark Mode",
   "lightMode": "Light Mode",
   "automatic": "Auto",
-  "startPage": "跳过 {seconds}"
+  "startPage": "跳过 {seconds}",
+
+  "nav_user_title": "用户",
+  "nav_project_title": "项目",
+  "nav_home_title": "首页",
+  "nav_trend_title": "动态"
 }

@@ -29,6 +29,10 @@ class MessageLookup extends MessageLookupByLibrary {
     "changeLanguage" : MessageLookupByLibrary.simpleMessage("Language"),
     "darkMode" : MessageLookupByLibrary.simpleMessage("Dark Mode"),
     "lightMode" : MessageLookupByLibrary.simpleMessage("Light Mode"),
+    "nav_home_title" : MessageLookupByLibrary.simpleMessage("home"),
+    "nav_project_title" : MessageLookupByLibrary.simpleMessage("project"),
+    "nav_trend_title" : MessageLookupByLibrary.simpleMessage("trend"),
+    "nav_user_title" : MessageLookupByLibrary.simpleMessage("user"),
     "startPage" : m0
   };
 }

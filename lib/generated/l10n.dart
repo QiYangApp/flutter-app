@@ -104,6 +104,46 @@ class S {
       args: [seconds],
     );
   }
+
+  /// `user`
+  String get nav_user_title {
+    return Intl.message(
+      'user',
+      name: 'nav_user_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `project`
+  String get nav_project_title {
+    return Intl.message(
+      'project',
+      name: 'nav_project_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `home`
+  String get nav_home_title {
+    return Intl.message(
+      'home',
+      name: 'nav_home_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `trend`
+  String get nav_trend_title {
+    return Intl.message(
+      'trend',
+      name: 'nav_trend_title',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

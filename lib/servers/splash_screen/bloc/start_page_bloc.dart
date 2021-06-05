@@ -5,7 +5,6 @@ import 'package:share_dream/servers/home/router/home_route.dart';
 import 'package:share_dream/servers/splash_screen/api/splash_screen_apis.dart';
 import 'package:share_dream/servers/splash_screen/model/splash_screen_model_index.dart';
 import 'package:share_dream/servers/splash_screen/splash_screen_const.dart';
-import 'package:share_dream/util/log_utils.dart';
 import 'package:share_dream/util/sp_util.dart';
 
 part 'start_page_event.dart';
@@ -41,23 +40,8 @@ class StartPageBloc extends Bloc<StartPageEvent, StartPageState> {
 
   //页面结束事件。 切换页面bloc状态
   Stream<StartPageState> _mapToEndPageToStates(StartPageEndEvent event) async* {
-    GuidePageModel guidePageModel = GuidePageConst.guidePageModel;
+    await Future.delayed(Duration(seconds: event.time));
 
-    Map cache = SpUtil.getObject(GuidePageConst.key);
-    if (cache != null) {
-      guidePageModel = GuidePageModel.fromJson(cache);
-    }
-
-    await Future.delayed(Duration(seconds: event.a));
-
-    //判断缓存是否存在数据
-    bool readStatus = SpUtil.getBool(GuidePageConst.key_read_status);
-    if (readStatus == false) {
-      //跳转引导页
-      yield StartPageJumpGuidePage(guidePageModel);
-    } else {
-      //跳转首页
-      yield StartPageJumpHomePage(HomeRoutePath.home);
-    }
+    yield StartPageJumpHomePage(HomeRoutePath.home);
   }
 }

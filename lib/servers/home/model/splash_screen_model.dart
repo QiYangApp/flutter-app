@@ -1,11 +1,4 @@
-import 'package:share_dream/servers/common/page/model/base_model.dart';
-
-/// title : "OxkY3"
-/// content : "0LJF"
-/// jump_link : "news://usetmdke.tel/igtfak"
-/// background_picture : "prospero://vvsup.org/ceiklkbwb"
-/// splash_type : 1
-/// splash_screen_time : 3
+import 'package:share_dream/servers/common/model/base_model.dart';
 
 class SplashScreenModel extends BaseModel {
   String _title;

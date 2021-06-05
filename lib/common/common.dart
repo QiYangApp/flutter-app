@@ -16,7 +16,7 @@ class Constant {
 
 class AppConfig {
   /// debug开关，上线需要关闭
-  /// App运行在Release环境时，inProduction为false；当App运行在Debug和Profile环境时，inProduction为false, kReleaseMode
+  /// App运行在Release环境时，inProduction为false；当App运行在Debug和Profile环境时，inProduction为true, kReleaseMode
   static const bool inProduction = kDebugMode;
 
   static bool isDriverTest = true;

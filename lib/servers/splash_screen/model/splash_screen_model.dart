@@ -1,6 +1,3 @@
-/// jump_link : "mid://ggobs.gn/xthpgkhodn"
-/// background_picture : "http://qszn6xg2u.hn-bkt.clouddn.com/WechatIMG17.jpeg"
-
 class SplashScreenModel {
   String _jumpLink;
   String _backgroundPicture;

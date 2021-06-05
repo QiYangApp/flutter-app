@@ -1,7 +1,3 @@
-/// jump_page : ""
-/// images : [{"title":"WhoNS","url":"tn3270://lyolj.jp/fxvil","description":"7GcX","order":null},{"title":"h!krH","url":"news://prkwappbnv.do/bdgsbesm","description":"M9)FXPJ","order":null}]
-/// updated_at : "2020-05-28 20:00:00"
-
 class GuidePageModel {
   String _jumpPage;
   List<Images> _images;

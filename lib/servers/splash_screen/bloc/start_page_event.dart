@@ -13,10 +13,10 @@ class StartPageStartEvent extends StartPageEvent {}
 //页面结束事件
 class StartPageEndEvent extends StartPageEvent {
 
-  final int a;
+  final int time;
 
-  StartPageEndEvent(this.a);
+  StartPageEndEvent(this.time);
 
   @override
-  List<Object> get props => [a];
+  List<Object> get props => [time];
 }

@@ -16,16 +16,6 @@ class StartPageLoading extends StartPageState {
   List<Object> get props => [startPageModel];
 }
 
-//跳转引导页状态
-class StartPageJumpGuidePage extends StartPageState {
-  final GuidePageModel guidePageModel;
-
-  StartPageJumpGuidePage(this.guidePageModel);
-
-  @override
-  List<Object> get props => [guidePageModel];
-}
-
 //跳转首页状态
 class StartPageJumpHomePage extends StartPageState {
 

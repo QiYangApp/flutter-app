@@ -13,17 +13,21 @@ class EntrancePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocBuilder<EntranceCubit, EntranceState>(
         builder: (BuildContext context, EntranceState state) {
-      if (state.readStatus == false) {
+      context
+          .read<EntranceCubit>()
+          .switchReadStatus(GuidePageServer.getReadStatus());
+
+      if (state.readStatus) {
         //启动页
         return BlocProvider(
-          create: (BuildContext cnotext) =>
+          create: (BuildContext context) =>
               StartPageBloc(StartPageServer.getCacheStartPage()),
           child: StartPage(),
         );
       } else {
         //引导页
         return BlocProvider(
-          create: (BuildContext cnotext) =>
+          create: (BuildContext context) =>
               GuidePageBloc(GuidePageServer.getCacheGuidePage()),
           child: GuidePage(),
         );
