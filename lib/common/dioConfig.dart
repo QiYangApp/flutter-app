@@ -18,7 +18,7 @@ class DomainConfig {
   static const String _FORMAL_DOMAIN = '';
 
   //开发域名
-  static const String _DEVELOP_DOMAIN = 'http://192.168.0.113:3002/mock/17';
+  static const String _DEVELOP_DOMAIN = 'http://192.168.0.113:3002/mock/11';
 
   //api 前置
   static const String _apiPrefix = 'apps/api/';

@@ -1,8 +1,6 @@
-/// updatedAt : "2020-12-12 00:00:00"
-/// index : 1
-/// tabs : [{"title":"标题","route":"路由","display":true,"sort":1,"icon":1,"mes":1}]
+import 'base_model.dart';
 
-class TabModel {
+class TabModel extends BaseModel {
   String _updatedAt;
   int _index;
   List<Tabs> _tabs;
@@ -21,7 +19,7 @@ class TabModel {
 }
 
   TabModel.fromJson(dynamic json) {
-    _updatedAt = json["updatedAt"];
+    _updatedAt = json["updated_at"];
     _index = json["index"];
     if (json["tabs"] != null) {
       _tabs = [];
@@ -33,7 +31,7 @@ class TabModel {
 
   Map<String, dynamic> toJson() {
     var map = <String, dynamic>{};
-    map["updatedAt"] = _updatedAt;
+    map["updated_at"] = _updatedAt;
     map["index"] = _index;
     if (_tabs != null) {
       map["tabs"] = _tabs.map((v) => v.toJson()).toList();
@@ -56,14 +54,14 @@ class Tabs {
   bool _display;
   int _sort;
   String _icon;
-  int _mes;
+  String _mes;
 
   String get title => _title;
   String get route => _route;
   bool get display => _display;
   int get sort => _sort;
   String get icon => _icon;
-  int get mes => _mes;
+  String get mes => _mes;
 
   Tabs({
       String title, 
@@ -71,7 +69,7 @@ class Tabs {
       bool display, 
       int sort,
     String icon,
-      int mes}){
+      String mes}){
     _title = title;
     _route = route;
     _display = display;
@@ -94,7 +92,7 @@ class Tabs {
     map["title"] = _title;
     map["route"] = _route;
     map["display"] = _display;
-    map["sort"] = _sort;
+      map["sort"] = _sort;
     map["icon"] = _icon;
     map["mes"] = _mes;
     return map;

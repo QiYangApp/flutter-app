@@ -7,8 +7,5 @@
   "automatic": "Auto",
   "startPage": "jump over {seconds}",
 
-  "nav_user_title": "user",
-  "nav_project_title": "project",
-  "nav_home_title": "home",
-  "nav_trend_title": "trend"
+  "nav_login": "login"
 }

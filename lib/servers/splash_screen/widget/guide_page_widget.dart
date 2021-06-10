@@ -38,7 +38,10 @@ class GuidePageWidgetState extends State<GuidePageWidget> {
   List<PageViewModel> getPageViewModel() {
     List<PageViewModel> page = [];
 
-    widget.guidePageModel.images.forEach((value) {
+    List<Images> images = widget.guidePageModel.images;
+    images.sort((a,b) => a.order.compareTo(b.order));
+
+    images.forEach((value) {
       page.add(PageViewModel(
         pageColor: HexColor("FF03A9F4"),
         bubble: Image.asset(value.url),

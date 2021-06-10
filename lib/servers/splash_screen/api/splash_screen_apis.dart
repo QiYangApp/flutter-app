@@ -20,7 +20,7 @@ class SplashScreenApis extends BaseApis {
 }
 
 //数据仓库
-class SplashScreenRepository extends BaseApiServer {
+class SplashScreenRepository extends BaseApiRepository {
   ///获取闪屏页面数据
   Future<SplashScreenModel> splashScreen() async {
     SplashScreenModel splashModel;
@@ -61,11 +61,9 @@ class SplashScreenRepository extends BaseApiServer {
 
     return guidePageModel;
   }
-
 }
 
 class GuidePageServer {
-
   //获取是否已读引导页
   static bool getReadStatus() {
     return SpUtil.getBool(GuidePageConst.key_read_status);

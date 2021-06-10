@@ -1,24 +1,58 @@
+import 'package:share_dream/common/dioConfig.dart';
 import 'package:share_dream/servers/common/api/base_api.dart';
 import 'package:share_dream/servers/common/api/base_api_server.dart';
-import 'package:share_dream/servers/common/const/TabSelectorConst.dart';
+import 'package:share_dream/servers/common/const/tab_selector_const.dart';
 import 'package:share_dream/servers/common/model/tab_model.dart';
+import 'package:share_dream/util/net/dio_utils.dart';
+import 'package:share_dream/util/sp_util.dart';
 
+//导航
 class TabApis extends BaseApis {
-  static Future<TabModel> getAllTabs() async {
-    return TabModel(updatedAt: "2020-03-12 00:00:00", index: 1, tabs: [
-      Tabs(title: '1'),
-      Tabs(title: '1'),
-      Tabs(title: '1'),
-      Tabs(title: '1'),
-    ]);
+  //底部导航
+  static const String bottomNavigation = 'navigation/bottom-navigation';
+}
+
+class TabRepository extends BaseApiRepository {
+  //底部导航
+  static Future<TabModel> bottomNavigation() async {
+    TabModel tabModel = TabSelectorConst.tabs;
+
+    await DioUtils.instance.requestNetwork(
+        RequestMethod.get, TabApis.bottomNavigation,
+        options: DioConfig().getVersionOptions(),
+        onSuccess: (data) => tabModel = TabModel.fromJson(data));
+
+    return tabModel;
   }
 }
 
-class TabServer extends BaseApiServer {
-  static TabModel getCacheAllTabs() {
-    TabModel tabModel = TabSelectorConst.tabs;
+class TabServer extends BaseServer {
+  static getCacheBottomNavigation() {
+    return _cacheTab();
+  }
 
-    TabApis.getAllTabs().then((value) => tabModel = value);
+  //缓存底部导航数据
+  static _cacheTab() {
+    TabModel tabModel = _getCacheBottomNavigation();
+
+    TabRepository.bottomNavigation().then((value) {
+      if (tabModel.updatedAt != value.updatedAt) {
+        SpUtil.putObject(TabSelectorConst.key, value);
+      }
+    });
+
+    return tabModel;
+  }
+
+  //获取底部缓存数据
+  static TabModel _getCacheBottomNavigation() {
+    TabModel tabModel = TabSelectorConst.tabs;
+    dynamic cache = SpUtil.getObject(TabSelectorConst.key);
+
+    //判断缓存是否存在数据
+    if (cache != null) {
+      tabModel = TabModel.fromJson(cache);
+    }
 
     return tabModel;
   }

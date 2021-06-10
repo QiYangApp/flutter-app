@@ -85,6 +85,8 @@ class DioUtils {
 
     _dio = Dio(_options);
 
+    Log.v(_interceptors);
+
     /// 添加拦截器
     _interceptors.forEach((interceptor) {
       _dio.interceptors.add(interceptor);

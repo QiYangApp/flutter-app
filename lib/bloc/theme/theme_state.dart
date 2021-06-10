@@ -7,15 +7,17 @@ abstract class ThemeState extends Equatable {
 
   final ThemeData theme;
 
-  const ThemeState(this.theme);
+  final SystemUiOverlayStyle systemUiOverlayStyle;
+
+  const ThemeState(this.theme, this.systemUiOverlayStyle);
 }
 
 //主题初始化
 class ThemeInitial extends ThemeState {
-  ThemeInitial(ThemeData theme) : super(theme);
+  ThemeInitial(ThemeData theme, SystemUiOverlayStyle systemUiOverlayStyle) : super(theme, systemUiOverlayStyle);
 }
 
 //主题状态改变
 class ThemeStateChange extends ThemeState {
-  ThemeStateChange(ThemeData theme) : super(theme);
+  ThemeStateChange(ThemeData theme, SystemUiOverlayStyle systemUiOverlayStyle) : super(theme, systemUiOverlayStyle);
 }

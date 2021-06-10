@@ -1,15 +1,16 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 import 'package:share_dream/bloc/app_bloc.dart';
 import 'package:share_dream/bloc/theme/theme_cubit.dart';
 import 'package:share_dream/common/common.dart';
 import 'package:share_dream/router/router.dart';
 import 'package:share_dream/servers/common/api/tab_apis.dart';
 import 'package:share_dream/servers/common/bloc/tab/tab_selector_bloc.dart';
-import 'package:share_dream/servers/common/model/tab_model.dart';
 import 'package:share_dream/servers/splash_screen/api/splash_screen_apis.dart';
 import 'package:share_dream/servers/splash_screen/bloc/entrance_cubit.dart';
 import 'package:share_dream/servers/splash_screen/page/entrance_page.dart';
@@ -38,9 +39,9 @@ class App extends StatelessWidget {
             create: (BuildContext context) => ThemeCubit(),
           ),
           //tab 导航
-          BlocProvider<TabSelectorBloc>(create: (BuildContext context) {
-            return TabSelectorBloc(TabServer.getCacheAllTabs());
-          }),
+          BlocProvider<TabSelectorBloc>(
+              create: (BuildContext context) =>
+                  TabSelectorBloc(TabServer.getCacheBottomNavigation())),
         ],
         child: BlocBuilder<AppBloc, AppState>(builder: (context, state) {
           return AppView();
@@ -52,6 +53,12 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<ThemeCubit, ThemeState>(builder: (context, state) {
+
+      // 以下两行 设置android状态栏为透明的沉浸。写在组件渲染之后，是为了在渲染后进行set赋值，覆盖状态栏，写在渲染之前MaterialApp组件会覆盖掉这个值。
+      if (Platform.isAndroid) {
+        SystemChrome.setSystemUIOverlayStyle(state.systemUiOverlayStyle);
+      }
+
       return MaterialApp(
           debugShowCheckedModeBanner: AppConfig.hasProductEnv(),
           theme: state.theme,

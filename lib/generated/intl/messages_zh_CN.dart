@@ -29,10 +29,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "changeLanguage" : MessageLookupByLibrary.simpleMessage("Language"),
     "darkMode" : MessageLookupByLibrary.simpleMessage("Dark Mode"),
     "lightMode" : MessageLookupByLibrary.simpleMessage("Light Mode"),
-    "nav_home_title" : MessageLookupByLibrary.simpleMessage("首页"),
-    "nav_project_title" : MessageLookupByLibrary.simpleMessage("项目"),
-    "nav_trend_title" : MessageLookupByLibrary.simpleMessage("动态"),
-    "nav_user_title" : MessageLookupByLibrary.simpleMessage("用户"),
+    "nav_login" : MessageLookupByLibrary.simpleMessage("登录"),
     "startPage" : m0
   };
 }

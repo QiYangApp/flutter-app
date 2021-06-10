@@ -3,6 +3,9 @@ import 'package:share_dream/servers/common/model/tab_model.dart';
 import 'package:share_dream/servers/home/router/home_route.dart';
 
 class TabSelectorConst {
+
+  static const key = 'bottomNavigationKey';
+
   //默认
   static final int currentIndex = 0;
 

@@ -1,3 +1,7 @@
-abstract class BaseApiServer {
 
+abstract class BaseApiRepository {
+
+}
+
+abstract class BaseServer {
 }

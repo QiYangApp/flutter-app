@@ -2,6 +2,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:share_dream/servers/common/page/not_fund_page.dart';
 import 'package:share_dream/servers/common/page/webview_page.dart';
+import 'package:share_dream/servers/common/router/entry_distribution_router.dart';
 import 'package:share_dream/servers/home/router/home_route.dart';
 
 ///抽象子路由
@@ -47,6 +48,9 @@ class RouterRegister {
   static void init() {
     //注册首页路由
     BaseRouter.addRoute(HomeRoute());
+
+    //注册全局导航
+    BaseRouter.addRoute(EntryDistributionRoute());
 
 
     initNotFundHandle();

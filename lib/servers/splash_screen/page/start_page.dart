@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:share_dream/servers/common/page/entry_distribution_page.dart';
-import 'package:share_dream/servers/home/page/home_page.dart';
 import 'package:share_dream/servers/splash_screen/bloc/start_page_bloc.dart';
 import 'package:share_dream/servers/splash_screen/model/start_page_model.dart';
 import 'package:share_dream/servers/splash_screen/widget/splash_screen_widget.dart';
@@ -37,9 +36,7 @@ class _StartPage extends State<StartPage> {
           context.read<StartPageBloc>().add(StartPageEndEvent(startPageModel.splashScreenTime));
         }
 
-        return SplashScreenWidget((BuildContext context) {
-          return;
-        },
+        return SplashScreenWidget((BuildContext context) {return ;},
             startPageModel.splashScreenTime,
             Image.asset(
               startPageModel.backgroundPicture,

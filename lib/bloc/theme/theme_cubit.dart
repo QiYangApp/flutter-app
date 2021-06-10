@@ -1,27 +1,30 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:share_dream/common/theme_config.dart';
 
 part 'theme_state.dart';
 
 class ThemeCubit extends Cubit<ThemeState> {
-  ThemeCubit() : super(ThemeInitial(ThemeConfig.lightTheme));
+  ThemeCubit() : super(ThemeInitial(ThemeConfig.lightTheme, SystemUiOverlayStyle(statusBarColor: Colors.transparent,statusBarIconBrightness: Brightness.dark)));
+
 
   /// Toggles the current brightness between light and dark.
-  void toggleTheme({ThemeData theme}) {
+  void changeTheme({ThemeData theme, SystemUiOverlayStyle systemUiOverlayStyle}) {
 
     //使用自定义
-    if (theme != null) {
-      emit(ThemeStateChange(theme));
+    if (theme == null) {
+      emit(ThemeStateChange(state.theme, systemUiOverlayStyle));
     }
 
-    //手动切换
-    if (state.theme.brightness == Brightness.light) {
-      emit(ThemeStateChange(ThemeConfig.lightTheme));
-    } else {
-      emit(ThemeStateChange(ThemeConfig.darkTheme));
-    }
+    emit(ThemeStateChange(theme, systemUiOverlayStyle));
+
+    // //手动切换
+    // if (state.theme.brightness == Brightness.light) {
+    //   emit(ThemeStateChange(ThemeConfig.lightTheme, systemUiOverlayStyle));
+    // } else {
+    //   emit(ThemeStateChange(ThemeConfig.darkTheme, systemUiOverlayStyle));
+    // }
   }
-
 }

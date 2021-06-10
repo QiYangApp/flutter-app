@@ -12,7 +12,6 @@ import 'package:share_dream/util/log_utils.dart';
 import 'package:share_dream/util/net/dio_utils.dart';
 import 'package:share_dream/bloc/app_bloc_observer.dart';
 import 'package:share_dream/util/sp_util.dart';
-import 'package:very_good_analysis/very_good_analysis.dart';
 
 class Global {
   static void init(VoidCallback callback) async {
@@ -32,12 +31,7 @@ class Global {
 
     // setInitDir(initStorageDir: true);
 
-    if (Platform.isAndroid) {
-      // 以下两行 设置android状态栏为透明的沉浸。写在组件渲染之后，是为了在渲染后进行set赋值，覆盖状态栏，写在渲染之前MaterialApp组件会覆盖掉这个值。
-      SystemUiOverlayStyle systemUiOverlayStyle =
-          SystemUiOverlayStyle(statusBarColor: Colors.transparent,statusBarIconBrightness: Brightness.dark);
-      SystemChrome.setSystemUIOverlayStyle(systemUiOverlayStyle);
-    }
+
   }
 
   //app 包信息
@@ -69,6 +63,7 @@ class Global {
   //网络
   static Future<void> dioInit() async {
     DioInit.init();
+    // DioUtils();
   }
 
   static Future<void> blocObserverInit() async {
