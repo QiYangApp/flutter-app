@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "share_dream")
-set(APPLICATION_ID "com.myadream.share_dream")
+set(BINARY_NAME "QiYang")
+set(APPLICATION_ID "com.myadream.QiYang")
 
 cmake_policy(SET CMP0063 NEW)
 

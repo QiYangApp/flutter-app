@@ -7,6 +7,10 @@ abstract class StartPageState extends Equatable {
   List<Object> get props => [];
 }
 
+class StartPageInitial extends StartPageState {
+
+}
+
 class StartPageLoading extends StartPageState {
   final StartPageModel startPageModel;
 

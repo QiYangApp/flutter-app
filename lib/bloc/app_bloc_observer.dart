@@ -1,5 +1,5 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:share_dream/util/log_utils.dart';
+import 'package:QiYang/util/log_utils.dart';
 
 class AppBlocObserver extends BlocObserver {
 

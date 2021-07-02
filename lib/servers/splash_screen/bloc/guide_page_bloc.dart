@@ -2,8 +2,8 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:share_dream/servers/splash_screen/api/splash_screen_apis.dart';
-import 'package:share_dream/servers/splash_screen/model/guide_page_model.dart';
+import 'package:QiYang/servers/splash_screen/api/splash_screen_apis.dart';
+import 'package:QiYang/servers/splash_screen/model/guide_page_model.dart';
 
 part 'guide_page_event.dart';
 part 'guide_page_state.dart';

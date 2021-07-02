@@ -1,28 +1,32 @@
+import 'package:QiYang/servers/common/bloc/tab/tab_selector_bloc.dart';
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TabSelectorWidget extends StatelessWidget {
-
   final int currentIndex;
 
   final List<CustomNavigationBarItem> items;
 
-  final Function(int) onTap;
-
-  const TabSelectorWidget({Key key, this.items, this.currentIndex, this.onTap}) : super(key: key);
+  const TabSelectorWidget({Key key, this.items, this.currentIndex}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return CustomNavigationBar(
-      items: items,
+      elevation: 0.0,
       iconSize: 30.0,
-      selectedColor: Color(0xff040307),
-      strokeColor: Color(0x30040307),
-      unSelectedColor: Color(0xffacacac),
-      backgroundColor: Colors.white,
+      selectedColor: Colors.amber,
+      strokeColor: Colors.transparent,
+      unSelectedColor: Colors.black,
+      backgroundColor: Colors.white70,
+
+      items: items,
+      // unSelectedColor: Color(0xffacacac),
       currentIndex: currentIndex,
-      onTap: onTap,
+      onTap:  (int index) {
+        BlocProvider.of<TabSelectorBloc>(context).add(TabSelectorPageTapped(index));
+      },
     );
   }
 }

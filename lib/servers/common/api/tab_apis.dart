@@ -1,10 +1,10 @@
-import 'package:share_dream/common/dioConfig.dart';
-import 'package:share_dream/servers/common/api/base_api.dart';
-import 'package:share_dream/servers/common/api/base_api_server.dart';
-import 'package:share_dream/servers/common/const/tab_selector_const.dart';
-import 'package:share_dream/servers/common/model/tab_model.dart';
-import 'package:share_dream/util/net/dio_utils.dart';
-import 'package:share_dream/util/sp_util.dart';
+import 'package:QiYang/common/dioConfig.dart';
+import 'package:QiYang/servers/common/api/base_api.dart';
+import 'package:QiYang/servers/common/api/base_api_server.dart';
+import 'package:QiYang/servers/common/const/tab_selector_const.dart';
+import 'package:QiYang/servers/common/model/tab_model.dart';
+import 'package:QiYang/util/net/dio_utils.dart';
+import 'package:QiYang/util/sp_util.dart';
 
 //导航
 class TabApis extends BaseApis {

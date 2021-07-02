@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:share_dream/generated/l10n.dart';
+import 'package:QiYang/generated/l10n.dart';
 
 
 class LocalizetionPage extends StatefulWidget {

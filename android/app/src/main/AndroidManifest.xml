@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.myadream.share_dream">
+    package="com.myadream.QiYang">
    <application
-        android:label="share_dream"
+        android:label="QiYang"
         android:icon="@mipmap/ic_launcher"
        android:usesCleartextTraffic="true"
        android:networkSecurityConfig="@xml/network_security_config"

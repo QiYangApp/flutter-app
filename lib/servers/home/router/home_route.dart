@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
-import 'package:share_dream/router/router.dart';
-import 'package:share_dream/servers/home/page/home_page.dart';
+import 'package:QiYang/router/router.dart';
+import 'package:QiYang/servers/home/page/home_page.dart';
 
 class HomeRoutePath {
   static const String home = 'home';

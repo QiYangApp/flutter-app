@@ -1,14 +1,13 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:common_utils/common_utils.dart';
 import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:share_dream/common/common.dart';
-import 'package:share_dream/common/dioConfig.dart';
+import 'package:QiYang/common/common.dart';
+import 'package:QiYang/common/dioConfig.dart';
 
 import '../log_utils.dart';
 import 'base_entity.dart';
@@ -168,7 +167,7 @@ class DioUtils {
       }
     }, onError: (dynamic e) {
       _cancelLogPrint(e, url);
-      // _onError(e.code, e.message, onError);
+      _onError(e.code, e.message, onError);
     });
   }
 

@@ -1,6 +1,6 @@
-import 'package:cached_network_image/cached_network_image.dart';
+import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:share_dream/util/log_utils.dart';
+import 'package:flutter/material.dart';
 
 enum ImageFormat { png, jpg, gif, webp }
 
@@ -15,7 +15,8 @@ class ImageUtil extends StatelessWidget {
       this.height,
       this.fit = BoxFit.cover,
       this.format = ImageFormat.png,
-      this.holderImg = 'none'})
+      this.holderImg,
+      this.errorImg})
       : super(key: key);
 
   final String image;
@@ -23,20 +24,21 @@ class ImageUtil extends StatelessWidget {
   final double height;
   final BoxFit fit;
   final ImageFormat format;
-  final String holderImg;
+  final Widget holderImg;
+  final Widget errorImg;
 
   @override
   Widget build(BuildContext context) {
     if (image.startsWith('http') || image.startsWith('https')) {
-      return CachedNetworkImage(
-        imageUrl: image,
-        placeholder: (_, __) =>
-            _loadAssetImage(holderImg, height: height, width: width, fit: fit),
-        errorWidget: (_, __, dynamic error) =>
-            _loadAssetImage(holderImg, height: height, width: width, fit: fit),
+      return ExtendedImage.network(
+        image,
         width: width,
         height: height,
         fit: fit,
+        cache: true,
+        // border: Border.all(color: Colors.red, width: 1.0),
+        // shape: boxShape,
+        borderRadius: BorderRadius.all(Radius.circular(30.0)),
       );
     }
 

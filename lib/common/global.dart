@@ -1,17 +1,15 @@
-import 'dart:io';
-
 import 'package:dio/dio.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:share_dream/common/common.dart';
+import 'package:QiYang/common/common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:share_dream/router/router.dart';
-import 'package:share_dream/util/log_utils.dart';
-import 'package:share_dream/util/net/dio_utils.dart';
-import 'package:share_dream/bloc/app_bloc_observer.dart';
-import 'package:share_dream/util/sp_util.dart';
+import 'package:QiYang/router/router.dart';
+import 'package:QiYang/util/log_utils.dart';
+import 'package:QiYang/util/net/dio_utils.dart';
+import 'package:QiYang/bloc/app_bloc_observer.dart';
+import 'package:QiYang/util/sp_util.dart';
 
 class Global {
   static void init(VoidCallback callback) async {
@@ -21,13 +19,14 @@ class Global {
     routeInit();
     blocObserverInit();
 
-    callback();
-
     WidgetsFlutterBinding.ensureInitialized();
     await SpUtil.getInstance();
+    EasyLoading.init();
 
     //显示包信息
     packageInfo();
+
+    callback();
 
     // setInitDir(initStorageDir: true);
 

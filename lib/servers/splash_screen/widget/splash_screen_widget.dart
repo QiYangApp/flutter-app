@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:share_dream/generated/l10n.dart';
-import 'package:share_dream/util/hex_color.dart';
-import 'package:share_dream/util/time_util.dart';
+import 'package:QiYang/generated/l10n.dart';
+import 'package:QiYang/util/hex_color.dart';
+import 'package:QiYang/util/time_util.dart';
 
 //回调用方法
 typedef Function Callback(BuildContext context);
@@ -36,34 +36,42 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
   @override
   void initState() {
     super.initState();
-
-    this.seconds = widget.seconds;
+    setState(() {
+      this.seconds = widget.seconds;
+    });
 
     _startTimer();
   }
 
-  //启动定时器
-  void _startTimer() {
-    timerUtil = TimerUtil(
-            mInterval: Duration(seconds: 1).inMilliseconds,
-            mTotalTime: Duration(seconds: widget.seconds).inMilliseconds)
-        .setOnTimerTickCallback((millisUntilFinished) {
-      setState(() {
-        seconds--;
-      });
-
-      //触发完成事件
-      if (seconds == 0) {
-        _endTimer();
-      }
-    });
+  @override
+  void didUpdateWidget(covariant SplashScreenWidget oldWidget) {
+    super.didUpdateWidget(oldWidget);
 
     //开始倒计时
     timerUtil.startCountDown();
   }
 
+  //启动定时器
+  void _startTimer() {
+    timerUtil = new TimerUtil(
+        mInterval: Duration(seconds: 1).inMilliseconds,
+        mTotalTime: Duration(seconds: seconds).inMilliseconds)
+        .setOnTimerTickCallback((int tick) {
+          double _tick = tick / 1000;
+
+          setState(() {
+        seconds = _tick.toInt();
+      });
+
+      //触发完成事件
+      if (_tick.toInt() == 0) {
+        _endTimer();
+      }
+    });
+  }
+
+
   void _endTimer() {
-    timerUtil.cancel();
     widget.callback(context);
   }
 
@@ -82,7 +90,6 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
             child: InkWell(
               onTap: () {
                 _endTimer();
-                // _goMain();
               },
               child: new Container(
                   padding: EdgeInsets.symmetric(

@@ -1,9 +1,10 @@
+import 'package:QiYang/servers/project/router/project_route.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:share_dream/servers/common/page/not_fund_page.dart';
-import 'package:share_dream/servers/common/page/webview_page.dart';
-import 'package:share_dream/servers/common/router/entry_distribution_router.dart';
-import 'package:share_dream/servers/home/router/home_route.dart';
+import 'package:QiYang/servers/common/page/not_fund_page.dart';
+import 'package:QiYang/servers/common/page/webview_page.dart';
+import 'package:QiYang/servers/common/router/entry_distribution_router.dart';
+import 'package:QiYang/servers/home/router/home_route.dart';
 
 ///抽象子路由
 abstract class AbstractRouteChild {
@@ -52,6 +53,8 @@ class RouterRegister {
     //注册全局导航
     BaseRouter.addRoute(EntryDistributionRoute());
 
+    //注册全局导航
+    BaseRouter.addRoute(ProjectRoute());
 
     initNotFundHandle();
     initWebViewPage();

@@ -1,6 +1,6 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:share_dream/common/dioConfig.dart';
+import 'package:QiYang/common/dioConfig.dart';
 import 'package:sp_util/sp_util.dart';
 
 import '../../log_utils.dart';

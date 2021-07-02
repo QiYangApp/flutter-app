@@ -1,9 +1,9 @@
-import 'package:share_dream/common/dioConfig.dart';
-import 'package:share_dream/servers/common/api/base_api.dart';
-import 'package:share_dream/servers/common/api/base_api_server.dart';
-import 'package:share_dream/servers/splash_screen/model/splash_screen_model_index.dart';
-import 'package:share_dream/util/net/dio_utils.dart';
-import 'package:share_dream/util/sp_util.dart';
+import 'package:QiYang/common/dioConfig.dart';
+import 'package:QiYang/servers/common/api/base_api.dart';
+import 'package:QiYang/servers/common/api/base_api_server.dart';
+import 'package:QiYang/servers/splash_screen/model/splash_screen_model_index.dart';
+import 'package:QiYang/util/net/dio_utils.dart';
+import 'package:QiYang/util/sp_util.dart';
 
 import '../splash_screen_const.dart';
 
@@ -40,10 +40,8 @@ class SplashScreenRepository extends BaseApiRepository {
 
     await DioUtils.instance.requestNetwork(
         RequestMethod.get, SplashScreenApis.START_PAGE,
-        options: DioConfig().getVersionOptions(), onSuccess: (data) {
-      startPageModel = StartPageModel.fromJson(data);
-      return startPageModel;
-    });
+        options: DioConfig().getVersionOptions(),
+        onSuccess: (data) => startPageModel = StartPageModel.fromJson(data));
 
     return startPageModel;
   }
@@ -54,10 +52,8 @@ class SplashScreenRepository extends BaseApiRepository {
 
     await DioUtils.instance.requestNetwork(
         RequestMethod.get, SplashScreenApis.GUIDE_PAGE,
-        options: DioConfig().getVersionOptions(), onSuccess: (data) {
-      guidePageModel = GuidePageModel.fromJson(data);
-      return guidePageModel;
-    });
+        options: DioConfig().getVersionOptions(),
+        onSuccess: (data) => guidePageModel = GuidePageModel.fromJson(data));
 
     return guidePageModel;
   }
@@ -77,7 +73,7 @@ class GuidePageServer {
   static cacheGuidePage() async {
     GuidePageModel guidePageModel = _getCache();
 
-    await SplashScreenRepository().guidePage().then((value) {
+    SplashScreenRepository().guidePage().then((value) {
       //判断是否需要更新。
       if (guidePageModel.updatedAt != value.updatedAt) {
         SpUtil.putObject(GuidePageConst.key, value);
@@ -133,8 +129,6 @@ class StartPageServer {
 
   //获取启动页面缓存数据
   static getCacheStartPage() {
-    cacheStartPage();
-
     return _getCache();
   }
 }

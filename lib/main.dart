@@ -1,19 +1,19 @@
 import 'dart:io';
 
+import 'package:QiYang/bloc/app_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:share_dream/bloc/app_bloc.dart';
-import 'package:share_dream/bloc/theme/theme_cubit.dart';
-import 'package:share_dream/common/common.dart';
-import 'package:share_dream/router/router.dart';
-import 'package:share_dream/servers/common/api/tab_apis.dart';
-import 'package:share_dream/servers/common/bloc/tab/tab_selector_bloc.dart';
-import 'package:share_dream/servers/splash_screen/api/splash_screen_apis.dart';
-import 'package:share_dream/servers/splash_screen/bloc/entrance_cubit.dart';
-import 'package:share_dream/servers/splash_screen/page/entrance_page.dart';
+import 'package:QiYang/bloc/theme/theme_cubit.dart';
+import 'package:QiYang/common/common.dart';
+import 'package:QiYang/router/router.dart';
+import 'package:QiYang/servers/common/api/tab_apis.dart';
+import 'package:QiYang/servers/common/bloc/tab/tab_selector_bloc.dart';
+import 'package:QiYang/servers/splash_screen/api/splash_screen_apis.dart';
+import 'package:QiYang/servers/splash_screen/bloc/entrance_cubit.dart';
+import 'package:QiYang/servers/splash_screen/page/entrance_page.dart';
 
 import 'common/global.dart';
 import 'generated/l10n.dart';

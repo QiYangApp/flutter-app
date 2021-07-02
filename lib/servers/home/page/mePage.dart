@@ -9,7 +9,7 @@ class MePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body:SafeArea(child: Text("qwqqqqqq${state}")));
+    return Scaffold(body:SafeArea(child: Text("qwqqqqqq $state")));
   }
 
 }

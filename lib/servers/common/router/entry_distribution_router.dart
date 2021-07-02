@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
-import 'package:share_dream/router/router.dart';
-import 'package:share_dream/servers/common/page/entry_distribution_page.dart';
+import 'package:QiYang/router/router.dart';
+import 'package:QiYang/servers/common/page/entry_distribution_page.dart';
 
 class EntryDistributionRoutePath {
   static const String entry_distribution = 'entry_distribution';

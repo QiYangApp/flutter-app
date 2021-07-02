@@ -1,4 +1,4 @@
-import 'package:share_dream/common/dioConfig.dart';
+import 'package:QiYang/common/dioConfig.dart';
 
 class BaseEntity<T> {
   final Map<String, dynamic> json;

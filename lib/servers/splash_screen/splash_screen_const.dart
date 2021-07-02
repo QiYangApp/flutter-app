@@ -1,6 +1,6 @@
-import 'package:share_dream/r.dart';
-import 'package:share_dream/servers/home/router/home_route.dart';
-import 'package:share_dream/servers/splash_screen/model/splash_screen_model_index.dart';
+import 'package:QiYang/r.dart';
+import 'package:QiYang/servers/home/router/home_route.dart';
+import 'package:QiYang/servers/splash_screen/model/splash_screen_model_index.dart';
 
 //引导页
 class GuidePageConst {

@@ -1,4 +1,4 @@
-import 'package:share_dream/servers/common/model/base_model.dart';
+import 'package:QiYang/servers/common/model/base_model.dart';
 
 class SplashScreenModel extends BaseModel {
   String _title;
