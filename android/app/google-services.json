@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "171245890462",
+    "project_id": "qiyangapp",
+    "storage_bucket": "qiyangapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171245890462:android:08d91a8e5c147f817c448f",
+        "android_client_info": {
+          "package_name": "com.myadream.QiYang"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "171245890462-bqig9lnra3bh4haj7shtqckmntfso2pc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCG2b8ZeRQXp05MXWJKNTobd-vrKTY-Tn8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "171245890462-bqig9lnra3bh4haj7shtqckmntfso2pc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
