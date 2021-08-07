@@ -7,6 +7,8 @@ abstract class GuidePageEvent extends Equatable {
   List<Object> get props => [];
 }
 
+//页面启动事件
+class GuidePageStartEvent extends GuidePageEvent {}
 
 //点击确认按钮事件, 跳转页面
 class GuidePageJumpPageEvent extends GuidePageEvent {

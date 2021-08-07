@@ -1,5 +1,5 @@
-import 'package:QiYang/servers/common/model/banner_model.dart';
-import 'package:QiYang/servers/common/widget/tab/progress_view_widget.dart';
+import 'package:QiYang/model/response/banner_response_model.dart';
+import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -8,7 +8,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 
 //首页banner
 class HomeBannerWidget extends StatelessWidget {
-  final BannerModel bannerModel;
+  final BannerResponseModel bannerModel;
 
   const HomeBannerWidget({Key key, this.bannerModel}) : super(key: key);
 
@@ -18,7 +18,7 @@ class HomeBannerWidget extends StatelessWidget {
       return new Container(height: 0.0);
     }
 
-    List<Banners> images = bannerModel.banners;
+    List<BannerResponseBanners> images = bannerModel.banners;
     images.sort((a, b) => a.order.compareTo(b.order));
 
     return new Swiper(

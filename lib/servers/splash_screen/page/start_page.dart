@@ -1,13 +1,11 @@
-import 'package:QiYang/servers/home/router/home_route.dart';
-import 'package:QiYang/util/image_util.dart';
+import 'package:QiYang/router/router_path.dart';
+import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
+import 'package:QiYang/servers/common/widget/image_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:QiYang/servers/common/router/entry_distribution_router.dart';
 import 'package:QiYang/servers/splash_screen/bloc/start_page_bloc.dart';
-import 'package:QiYang/servers/splash_screen/model/start_page_model.dart';
 import 'package:QiYang/servers/splash_screen/widget/splash_screen_widget.dart';
 import 'package:QiYang/util/fluro_navigator.dart';
 
@@ -32,23 +30,21 @@ class _StartPage extends State<StartPage> {
         //跳转路由
         if (state is StartPageJumpHomePage) {
           NavigatorUtils.push(
-              context, EntryDistributionRoutePath.entry_distribution);
+              context, RouterPath.entry);
         }
       },
       builder: (BuildContext context, state) {
         //重复加载完成事件
         if (state is StartPageLoading) {
-          StartPageModel startPageModel = state.startPageModel;
-
           return SplashScreenWidget((BuildContext context) {
             context
                 .read<StartPageBloc>()
-                .add(StartPageEndEvent(HomeRoutePath.home));
+                .add(StartPageEndEvent(RouterPath.home));
             return;
           },
-              startPageModel.splashScreenTime,
-              ImageUtil(
-                startPageModel.backgroundPicture,
+              state.startPageModel.splashScreenTime,
+              ImageWidget(
+                state.startPageModel.backgroundPicture,
                 fit: BoxFit.fill,
                 width: ScreenUtil().screenWidth,
                 height: ScreenUtil().screenHeight,
@@ -56,10 +52,7 @@ class _StartPage extends State<StartPage> {
         }
 
         //进度条
-        return SpinKitFadingCircle(
-          color: Colors.blue,
-          size: ScreenUtil().setWidth(50),
-        );
+        return ProgressViewWidget();
       },
     );
   }

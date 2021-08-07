@@ -12,5 +12,20 @@
   "nav_home_title": "首页",
   "nav_trend_title": "动态",
 
-  "nav_login": "登录"
+  "nav_login": "登录",
+
+  "recommendedItems": "推荐项目",
+  "more": "更多",
+
+  "homeRecommendedArticle": "推荐文章",
+
+  "loginAppBarTitle": "登录",
+  "loginNicknameInputTitle": "账号",
+  "loginPasswordInputTitle": "密码",
+  "loginBtnText": "登录",
+  "loginBtnLockText": "登录中",
+
+  "home_header_title": "首页",
+  "home_item_agree_with": "赞同",
+  "home_item_see": "查看"
 }

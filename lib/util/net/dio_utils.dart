@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
+import 'package:dio_http_cache/dio_http_cache.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -31,11 +32,19 @@ class DioInit {
 
     defaultInterceptors.add(LogInterceptor());
 
+    //缓存中间件
+    defaultInterceptors.add(DioCacheManager(CacheConfig(
+        databaseName: "QiYang",
+        defaultMaxAge: Duration(seconds: 180),
+        defaultMaxStale: Duration(seconds: 3600),
+        baseUrl: DioConfig.getDomain()
+    )).interceptor);
+
     return defaultInterceptors;
   }
 }
 
-typedef NetSuccessCallback<T> = Function(T data);
+typedef NetSuccessCallback<T> = Function(T data, BaseEntity response);
 typedef NetSuccessListCallback<T> = Function(List<T> data);
 typedef NetErrorCallback = Function(int code, String msg);
 
@@ -119,10 +128,11 @@ class DioUtils {
       final Map<String, dynamic> _map =
           isCompute ? await compute(parseData, data) : parseData(data);
 
-      return BaseEntity(_map);
+      Log.v(_map, tag: "request");
+
+      return BaseEntity<T>.fromJson(_map);
     } catch (e) {
       debugPrint(e.toString());
-      Log.e(e.toString());
 
       return new Future.error(new DioError(
         requestOptions: null,
@@ -160,11 +170,11 @@ class DioUtils {
     ).then((BaseEntity<T> result) {
       if (result.code == 200) {
         if (onSuccess != null) {
-          onSuccess(result.data);
+          onSuccess(result.data, result);
         }
-      } else {
-        _onError(result.code, result.message, onError);
       }
+
+      return result.data;
     }, onError: (dynamic e) {
       _cancelLogPrint(e, url);
       _onError(e.code, e.message, onError);
@@ -192,7 +202,7 @@ class DioUtils {
     )).asBroadcastStream().listen((result) {
       if (result.code == 0) {
         if (onSuccess != null) {
-          onSuccess(result.data);
+          onSuccess(result.data, result);
         }
       } else {
         _onError(result.code, result.message, onError);

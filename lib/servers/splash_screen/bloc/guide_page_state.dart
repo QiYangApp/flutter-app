@@ -9,10 +9,13 @@ abstract class GuidePageState extends Equatable {
 
 //初始化
 class GuidePageInitial extends GuidePageState {
-  //是否阅读过引导页
-  final GuidePageModel guidePageModel;
 
-  GuidePageInitial(this.guidePageModel);
+}
+
+class GuidePageLoading extends GuidePageState {
+  final GuidePageResponseModel guidePageModel;
+
+  GuidePageLoading(this.guidePageModel);
 
   @override
   List<Object> get props => [guidePageModel];

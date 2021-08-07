@@ -25,6 +25,12 @@ def keystorePropertiesFile = rootProject.file("key.properties")
 def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
+//极光推送
+def jpushFile = rootProject.file('jpush.properties')
+def jpushProperties = new Properties()
+jpushProperties.load(new FileInputStream(jpushFile))
+
+
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
@@ -45,6 +51,17 @@ android {
         multiDexEnabled true
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+
+        ndk {
+            //选择要添加的对应 cpu 类型的 .so 库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86', 'x86_64', 'mips', 'mips64', 'arm64-v8a'
+        }
+
+        manifestPlaceholders = [
+            JPUSH_PKGNAME: applicationId,
+            JPUSH_APPKEY : jpushProperties['jpush_appkey'], // NOTE: JPush 上注册的包名对应的 Appkey.
+            JPUSH_CHANNEL: jpushProperties['jpush_channel'], //暂时填写默认值即可.
+        ]
     }
 
 //    buildTypes {

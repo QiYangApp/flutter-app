@@ -7,6 +7,10 @@ abstract class TabSelectorEvent extends Equatable {
   List<Object> get props => [];
 }
 
+
+class TabSelectorInitialEvent extends TabSelectorEvent {}
+
+//跳转页面
 class TabSelectorPageTapped extends TabSelectorEvent {
   final int index;
 

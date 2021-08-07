@@ -4,18 +4,25 @@ import 'package:QiYang/router/router.dart';
 
 /// fluro的路由跳转工具类
 class NavigatorUtils {
-
   static void push(BuildContext context, String path,
-      {bool replace = false, bool clearStack = false}) {
+      {bool replace = false,
+      bool clearStack = false,
+      TransitionType transition = TransitionType.native}) {
     unfocus();
-    BaseRouter.route.navigateTo(context, path, replace: replace, clearStack: clearStack, transition: TransitionType.native);
+    BaseRouter.route.navigateTo(context, path,
+        replace: replace, clearStack: clearStack, transition: transition);
   }
 
-
-  static void pushResult(BuildContext context, String path, Function(Object) function,
-      {bool replace = false, bool clearStack = false}) {
+  static void pushResult(
+      BuildContext context, String path, Function(Object) function,
+      {bool replace = false,
+      bool clearStack = false,
+      TransitionType transition = TransitionType.native}) {
     unfocus();
-    BaseRouter.route.navigateTo(context, path, replace: replace, clearStack: clearStack, transition: TransitionType.native).then((Object result) {
+    BaseRouter.route
+        .navigateTo(context, path,
+            replace: replace, clearStack: clearStack, transition: transition)
+        .then((Object result) {
       // 页面返回result为null
       if (result == null) {
         return;
@@ -41,7 +48,8 @@ class NavigatorUtils {
   /// 跳到WebView页
   static void goWebViewPage(BuildContext context, String title, String url) {
     //fluro 不支持传中文,需转换
-    push(context, '${BaseRouter.getWebViewPath("default")}?title=${Uri.encodeComponent(title)}&url=${Uri.encodeComponent(url)}');
+    push(context,
+        '${BaseRouter.getWebViewPath("default")}?title=${Uri.encodeComponent(title)}&url=${Uri.encodeComponent(url)}');
   }
 
   static void unfocus() {

@@ -1,15 +1,26 @@
-import 'package:dio/dio.dart';
-
 import 'common.dart';
 
 //api 版本
 enum ApiVersion {
-  v1, v2, v3
+  def, v1, v2, v3
 }
 
 //api版本扩展获取工具
 extension ApiVersinoExtension on ApiVersion {
-  String get value => ['1','2','3'][index];
+  String get value {
+    switch (this) {
+      case ApiVersion.v1:
+        return "v1";
+      case ApiVersion.def:
+        return "v1";
+      case ApiVersion.v2:
+        return "v2";
+      case ApiVersion.v3:
+        return "v3";
+      default:
+        return "v1";
+    }
+  }
 }
 
 
@@ -73,19 +84,9 @@ class ProxyConfig {
   }
 }
 
-//获取api版本信息
-class ApiVersionOptions {
-  getVersionOptions({ApiVersion version = ApiVersion.v1}) {
-    return Options(
-      headers: {
-        "Accept": "application/vnd.heroku+json; version=${version.value}"
-      },
-    );
-  }
-}
 
 /// 默认dio配置
-class DioConfig with ApiVersionOptions {
+class DioConfig {
   static final int connectTimeout = 15000;
   static final int receiveTimeout = 15000;
   static final int sendTimeout = 10000;

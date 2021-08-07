@@ -114,6 +114,116 @@ class S {
       args: [],
     );
   }
+
+  /// `Recommended items`
+  String get recommendedItems {
+    return Intl.message(
+      'Recommended items',
+      name: 'recommendedItems',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More`
+  String get more {
+    return Intl.message(
+      'More',
+      name: 'more',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Recommended Article`
+  String get homeRecommendedArticle {
+    return Intl.message(
+      'Recommended Article',
+      name: 'homeRecommendedArticle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get loginAppBarTitle {
+    return Intl.message(
+      'Login',
+      name: 'loginAppBarTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `nickname`
+  String get loginNicknameInputTitle {
+    return Intl.message(
+      'nickname',
+      name: 'loginNicknameInputTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `password`
+  String get loginPasswordInputTitle {
+    return Intl.message(
+      'password',
+      name: 'loginPasswordInputTitle',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `login`
+  String get loginBtnText {
+    return Intl.message(
+      'login',
+      name: 'loginBtnText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `logging`
+  String get loginBtnLockText {
+    return Intl.message(
+      'logging',
+      name: 'loginBtnLockText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `home`
+  String get home_header_title {
+    return Intl.message(
+      'home',
+      name: 'home_header_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `agree with`
+  String get home_item_agree_with {
+    return Intl.message(
+      'agree with',
+      name: 'home_item_agree_with',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `see`
+  String get home_item_see {
+    return Intl.message(
+      'see',
+      name: 'home_item_see',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

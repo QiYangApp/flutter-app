@@ -28,8 +28,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "changeDarkMode" : MessageLookupByLibrary.simpleMessage("Light/Dark Mode"),
     "changeLanguage" : MessageLookupByLibrary.simpleMessage("Language"),
     "darkMode" : MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "homeRecommendedArticle" : MessageLookupByLibrary.simpleMessage("Recommended Article"),
+    "home_header_title" : MessageLookupByLibrary.simpleMessage("home"),
+    "home_item_agree_with" : MessageLookupByLibrary.simpleMessage("agree with"),
+    "home_item_see" : MessageLookupByLibrary.simpleMessage("see"),
     "lightMode" : MessageLookupByLibrary.simpleMessage("Light Mode"),
+    "loginAppBarTitle" : MessageLookupByLibrary.simpleMessage("Login"),
+    "loginBtnLockText" : MessageLookupByLibrary.simpleMessage("logging"),
+    "loginBtnText" : MessageLookupByLibrary.simpleMessage("login"),
+    "loginNicknameInputTitle" : MessageLookupByLibrary.simpleMessage("nickname"),
+    "loginPasswordInputTitle" : MessageLookupByLibrary.simpleMessage("password"),
+    "more" : MessageLookupByLibrary.simpleMessage("More"),
     "nav_login" : MessageLookupByLibrary.simpleMessage("login"),
+    "recommendedItems" : MessageLookupByLibrary.simpleMessage("Recommended items"),
     "startPage" : m0
   };
 }

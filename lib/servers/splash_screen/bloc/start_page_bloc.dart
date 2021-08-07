@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:QiYang/servers/splash_screen/api/splash_screen_apis.dart';
-import 'package:QiYang/servers/splash_screen/model/splash_screen_model_index.dart';
+import 'package:QiYang/apis/api_servers.dart';
+import 'package:QiYang/model/response/start_page_response_model.dart';
 
 part 'start_page_event.dart';
 
@@ -15,11 +15,9 @@ class StartPageBloc extends Bloc<StartPageEvent, StartPageState> {
   Stream<StartPageState> mapEventToState(
     StartPageEvent event,
   ) async* {
-
     //数据初始化
     if (state is StartPageInitial) {
-      await StartPageServer.cacheStartPage();
-      yield StartPageLoading(StartPageServer.getCacheStartPage());
+      yield StartPageLoading(await ApiServers().startPage());
     }
 
     //跳转页面

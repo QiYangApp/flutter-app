@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -29,11 +27,13 @@ class WillPopScopeWidget extends StatelessWidget {
       return false;
     }
 
-    if (Platform.isAndroid) {
-      await SystemChannels.platform.invokeMethod('SystemNavigator.pop');
-    } else {
-      exit(0);
-    }
+    // if (Platform.isAndroid) {
+    //   await SystemChannels.platform.invokeMethod('SystemNavigator.pop');
+    // } else {
+    //   exit(0);
+    // }
+
+    await SystemNavigator.pop();
 
     return true;
   }
@@ -46,7 +46,7 @@ class WillPopScopeWidget extends StatelessWidget {
         timeInSecForIosWeb: 1,
         backgroundColor: Colors.black12,
         textColor: Colors.black,
-        fontSize: 16.0
+        fontSize: 16.0,
     );
   }
 

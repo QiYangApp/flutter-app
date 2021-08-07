@@ -1,5 +1,6 @@
-import 'package:QiYang/servers/common/api/banner_apis.dart';
-import 'package:QiYang/servers/common/model/banner_model.dart';
+import 'package:QiYang/apis/api_servers.dart';
+import 'package:QiYang/model/request/banner_request_model.dart';
+import 'package:QiYang/model/response/banner_response_model.dart';
 import 'package:QiYang/util/log_utils.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
@@ -11,15 +12,9 @@ class HomeBannerCubit extends Cubit<HomeBannerState> {
 
   //加载banner
   Future<void> loadHomeBanner() async {
-    Log.v(state);
+    Log.v(state, tag: "load Home Banner");
     if (state is HomeBannerInitial) {
-      BannerModel bannerModel;
-      await BannerServer.cacheBanner(BannerClassify.home)
-          .then((value) => bannerModel = value);
-
-      Log.v(1111);
-      Log.v(bannerModel);
-      emit(HomeBannerLoaded(bannerModel));
+      emit(HomeBannerLoaded(await ApiServers().banner(BannerClassify.home)));
     }
   }
 }

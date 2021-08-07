@@ -7,6 +7,10 @@ import 'package:QiYang/common/common.dart';
 class Log  {
   static const String tag = 'DEER-LOG';
 
+  static void startLog(String mes) {
+    v(">>>>>>>>>>>>> ${mes} <<<<<<<<<<<<<", tag: "init");
+  }
+
   static void init() {
     LogUtil.init(isDebug: AppConfig.hasProductEnv());
   }

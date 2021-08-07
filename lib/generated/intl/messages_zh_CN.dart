@@ -28,8 +28,19 @@ class MessageLookup extends MessageLookupByLibrary {
     "changeDarkMode" : MessageLookupByLibrary.simpleMessage("Light/Dark Mode"),
     "changeLanguage" : MessageLookupByLibrary.simpleMessage("Language"),
     "darkMode" : MessageLookupByLibrary.simpleMessage("Dark Mode"),
+    "homeRecommendedArticle" : MessageLookupByLibrary.simpleMessage("推荐文章"),
+    "home_header_title" : MessageLookupByLibrary.simpleMessage("首页"),
+    "home_item_agree_with" : MessageLookupByLibrary.simpleMessage("赞同"),
+    "home_item_see" : MessageLookupByLibrary.simpleMessage("查看"),
     "lightMode" : MessageLookupByLibrary.simpleMessage("Light Mode"),
+    "loginAppBarTitle" : MessageLookupByLibrary.simpleMessage("登录"),
+    "loginBtnLockText" : MessageLookupByLibrary.simpleMessage("登录中"),
+    "loginBtnText" : MessageLookupByLibrary.simpleMessage("登录"),
+    "loginNicknameInputTitle" : MessageLookupByLibrary.simpleMessage("账号"),
+    "loginPasswordInputTitle" : MessageLookupByLibrary.simpleMessage("密码"),
+    "more" : MessageLookupByLibrary.simpleMessage("更多"),
     "nav_login" : MessageLookupByLibrary.simpleMessage("登录"),
+    "recommendedItems" : MessageLookupByLibrary.simpleMessage("推荐项目"),
     "startPage" : m0
   };
 }

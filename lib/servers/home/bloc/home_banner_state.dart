@@ -15,7 +15,7 @@ class HomeBannerInitial extends HomeBannerState {
 
 //加载完成事件
 class HomeBannerLoaded extends HomeBannerState {
-  final BannerModel bannerModel;
+  final BannerResponseModel bannerModel;
 
   HomeBannerLoaded(this.bannerModel);
 

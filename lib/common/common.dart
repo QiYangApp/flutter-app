@@ -31,6 +31,10 @@ class AppConfig {
     return inProduction;
   }
 
+  static bool hasDevelopmentEnv() {
+    return !hasProductEnv();
+  }
+
 }
 
 class LoadStatus {

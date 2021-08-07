@@ -1,18 +1,17 @@
 import 'package:QiYang/common/dioConfig.dart';
+import 'package:QiYang/generated/json/base/json_convert_content.dart';
 
 class BaseEntity<T> {
-  final Map<String, dynamic> json;
-
   int code;
   String message;
   T data;
 
-  BaseEntity(this.json) {
+  BaseEntity.fromJson(Map<String, dynamic> json) {
     code = json[ResponseFormat.code] as int;
     message = json[ResponseFormat.message] as String;
 
     if (json.containsKey(ResponseFormat.data)) {
-      data = json[ResponseFormat.data];
+      data = JsonConvert.fromJsonAsT(json[ResponseFormat.data]);
     }
   }
 

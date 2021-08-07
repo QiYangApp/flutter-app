@@ -7,5 +7,20 @@
   "automatic": "Auto",
   "startPage": "jump over {seconds}",
 
-  "nav_login": "login"
+  "nav_login": "login",
+  "recommendedItems": "Recommended items",
+  "more": "More",
+
+
+  "homeRecommendedArticle": "Recommended Article",
+
+  "loginAppBarTitle": "Login",
+  "loginNicknameInputTitle": "nickname",
+  "loginPasswordInputTitle": "password",
+  "loginBtnText": "login",
+  "loginBtnLockText": "logging",
+
+  "home_header_title": "home",
+  "home_item_agree_with": "agree with",
+  "home_item_see": "see"
 }

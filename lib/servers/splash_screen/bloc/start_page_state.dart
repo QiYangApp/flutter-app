@@ -12,7 +12,7 @@ class StartPageInitial extends StartPageState {
 }
 
 class StartPageLoading extends StartPageState {
-  final StartPageModel startPageModel;
+  final StartPageResponseModel startPageModel;
 
   StartPageLoading(this.startPageModel);
 

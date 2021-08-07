@@ -43,23 +43,15 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
     _startTimer();
   }
 
-  @override
-  void didUpdateWidget(covariant SplashScreenWidget oldWidget) {
-    super.didUpdateWidget(oldWidget);
-
-    //开始倒计时
-    timerUtil.startCountDown();
-  }
-
   //启动定时器
   void _startTimer() {
     timerUtil = new TimerUtil(
-        mInterval: Duration(seconds: 1).inMilliseconds,
-        mTotalTime: Duration(seconds: seconds).inMilliseconds)
+            mInterval: Duration(seconds: 1).inMilliseconds,
+            mTotalTime: Duration(seconds: seconds).inMilliseconds)
         .setOnTimerTickCallback((int tick) {
-          double _tick = tick / 1000;
+      double _tick = tick / 1000;
 
-          setState(() {
+      setState(() {
         seconds = _tick.toInt();
       });
 
@@ -70,13 +62,15 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
     });
   }
 
-
   void _endTimer() {
     widget.callback(context);
   }
 
   @override
   Widget build(BuildContext context) {
+
+    timerUtil.startCountDown();
+
     return Scaffold(
       body: Stack(
         children: <Widget>[
@@ -98,19 +92,15 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
                   ),
                   child: new Text(
                     "${S.of(context).startPage(seconds)}",
-                    // IntlUtil.getString(context, Ids.jump_count,
-                    //     params: ['$_count']),
                     style: new TextStyle(
                         fontSize: ScreenUtil().setSp(14.0),
                         color: Colors.white),
                   ),
                   decoration: new BoxDecoration(
-                      color: HexColor("660000"),
+                      color: HexColor("666666"),
                       borderRadius: BorderRadius.all(
-                          Radius.circular(ScreenUtil().setWidth(4))),
-                      border: new Border.all(
-                          width: ScreenUtil().setWidth(0.33),
-                          color: Colors.red))),
+                        Radius.circular(ScreenUtil().setWidth(4)),
+                      ))),
             ),
           )
         ],
