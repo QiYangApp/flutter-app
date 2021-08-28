@@ -1,6 +1,5 @@
 import 'package:QiYang/router/router_path.dart';
 import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
-import 'package:QiYang/servers/splash_screen/guide_page_server.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

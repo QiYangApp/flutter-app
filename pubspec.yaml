@@ -52,7 +52,7 @@ dependencies:
   #网络打开
   url_launcher: ^6.0.3
   #图片加载-图片选择
-  image_picker: ^0.7.4
+  image_picker: ^0.8.3+2
   #图片缓存
   extended_image: ^4.1.0
   extended_image_library: ^3.1.0
@@ -83,7 +83,7 @@ dependencies:
   #国际化
   intl: ^0.17.0
   #设备信息
-  device_info_plus: ^1.0.1
+  device_info_plus: ^2.1.0
   #状态管理
   flutter_bloc: ^7.0.0
   google_fonts: ^2.0.0
@@ -138,11 +138,11 @@ dependencies:
   #云存储
   firebase_storage: ^8.1.0
   #本地通知
-  flutter_local_notifications: ^6.0.0
+  flutter_local_notifications: ^8.1.1
 
   #滑动图片
   intro_views_flutter: ^3.1.1
-  carousel_slider: ^3.0.0
+  carousel_slider: ^4.0.0
 
   #数据报表显示
   syncfusion_flutter_charts: ^19.1.66+1
@@ -166,13 +166,13 @@ dependencies:
   pdf: ^3.4.2
 
   #app 版本升级
-  flutter_app_upgrade:
-    git:
-      ref: eb288761c3ecc142f6c7f1e6f2a0be7f6ee01371
-      url: https://github.com/QiYangApp/flutter_app_upgrade.git
+#  flutter_app_upgrade:
+#    git:
+#      ref: eb288761c3ecc142f6c7f1e6f2a0be7f6ee01371
+#      url: https://github.com/QiYangApp/flutter_app_upgrade.git
 
   #极光推送
-  jpush_flutter: 2.1.2
+  jpush_flutter: ^2.1.5
 
   #分享按钮
   modal_bottom_sheet: ^2.0.0
@@ -185,6 +185,9 @@ dependencies:
 
   #颜色选择器
   flex_color_picker: ^2.1.2
+
+  #显示html
+  flutter_html: ^2.1.1
 
   #配置文件加载
   flutter_config: ^2.0.0

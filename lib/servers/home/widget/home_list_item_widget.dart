@@ -1,10 +1,10 @@
 import 'package:QiYang/generated/l10n.dart';
 import 'package:QiYang/model/const/article_classify_const.dart';
 import 'package:QiYang/model/response/article_classify_response_model.dart';
+import 'package:QiYang/router/router_path.dart';
 import 'package:QiYang/servers/home/bloc/home_list_bloc.dart';
-import 'package:QiYang/util/hex_color.dart';
+import 'package:QiYang/util/fluro_navigator.dart';
 import 'package:QiYang/util/image_util.dart';
-import 'package:QiYang/util/log_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -40,7 +40,7 @@ class _HomeListItemWidgetState extends State<HomeListItemWidget> {
           itemBuilder: (BuildContext context, int index) {
             return InkWell(
                 onTap: () {
-                  Log.v(_data[index].title);
+                  NavigatorUtils.push(context, RouterPath.article_detail_path + _data[index].articleId);
                 },
                 child: _HomeListItemChildWidget(
                   data: _data[index],
@@ -157,14 +157,14 @@ class ArticleCardShared extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "111" + " ",
+                        data.agreeWith.toString(),
                         style: Theme.of(context)
                             .textTheme
                             .bodyText2
                             .copyWith(color: Colors.grey),
                       ),
                       Text(
-                        S.of(context).home_item_agree_with,
+                        " " + S.of(context).home_item_agree_with,
                         style: Theme.of(context)
                             .textTheme
                             .bodyText2
@@ -176,14 +176,14 @@ class ArticleCardShared extends StatelessWidget {
                   Row(
                     children: [
                       Text(
-                        "222" + " ",
+                        data.see.toString(),
                         style: Theme.of(context)
                             .textTheme
                             .bodyText2
                             .copyWith(color: Colors.grey),
                       ),
                       Text(
-                        S.of(context).home_item_see,
+                        " " + S.of(context).home_item_see,
                         style: Theme.of(context)
                             .textTheme
                             .bodyText2
@@ -294,7 +294,6 @@ class ArticleVideoCard extends StatelessWidget {
     //todo 视频模块代码开发
     return Container();
   }
-
 }
 
 /// Wrap Ui item with animation & padding

@@ -1,10 +1,9 @@
 import 'package:QiYang/bloc/auth/auth_cubit.dart';
 import 'package:QiYang/generated/l10n.dart';
-import 'package:QiYang/router/router_path.dart';
 import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
 import 'package:QiYang/servers/login/bloc/login_bloc.dart';
 import 'package:QiYang/util/fluro_navigator.dart';
-import 'package:QiYang/util/log_utils.dart';
+import 'package:QiYang/util/validator/EmailValidator.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -42,17 +41,18 @@ class LoginFormPage extends StatelessWidget {
             child: Container(
               alignment: Alignment.center,
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(
-                    height: ScreenUtil().setHeight(200),
-                    width: ScreenUtil().scaleWidth,
-                  ),
-                  Text(
-                    S.of(context).loginAppBarTitle,
-                    style: TextStyle(fontSize: ScreenUtil().setSp(32)),
-                  ),
-                  SizedBox(
-                    height: ScreenUtil().setHeight(20),
+                  Padding(
+                    padding: EdgeInsets.only(
+                        top: ScreenUtil().setHeight(200),
+                        bottom: ScreenUtil().setHeight(40)),
+                    child: Text(
+                      S.of(context).loginAppBarTitle,
+                      style: TextStyle(
+                          fontSize: ScreenUtil().setSp(34),
+                          fontWeight: FontWeight.bold),
+                    ),
                   ),
                   SizedBox(
                     width: ScreenUtil().setWidth(300),
@@ -63,7 +63,7 @@ class LoginFormPage extends StatelessWidget {
                         children: [
                           _usernameInput(),
                           SizedBox(
-                            height: ScreenUtil().setHeight(10),
+                            height: ScreenUtil().setHeight(20),
                           ),
                           _passwordInput(),
                           SizedBox(
@@ -96,18 +96,24 @@ class LoginFormPage extends StatelessWidget {
           textInputAction: TextInputAction.done,
           maxLength: 32,
           onChanged: (v) {
-            Log.v(v);
             context.read<LoginBloc>().add(LoginPasswordChanged(v));
           },
+          style: TextStyle(color: Colors.black),
           keyboardType: TextInputType.visiblePassword,
           controller: _passwordController,
           decoration: InputDecoration(
-              counterText: '',
-              hintText: S.of(context).loginPasswordInputTitle,
-              contentPadding: EdgeInsets.all(10.0),
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(15.0),
-              )),
+            prefixIcon: Icon(Icons.lock),
+            counterText: '',
+            hintText: S.of(context).loginPasswordInputTitle,
+            // 未获得焦点下划线设为灰色
+            enabledBorder: UnderlineInputBorder(
+              borderSide: BorderSide(color: Colors.grey),
+            ),
+            //获得焦点下划线设为蓝色
+            focusedBorder: UnderlineInputBorder(
+              borderSide: BorderSide(color: Colors.blue),
+            ),
+          ),
           validator: (v) {
             return v.trim().length > 0 ? null : "不能为空";
           });
@@ -137,14 +143,25 @@ class LoginFormPage extends StatelessWidget {
             onChanged: (v) {
               context.read<LoginBloc>().add(LoginUsernameChanged(v));
             },
+            style: TextStyle(color: Colors.black),
             decoration: InputDecoration(
-                counterText: '',
-                hintText: S.of(context).loginNicknameInputTitle,
-                contentPadding: EdgeInsets.all(10.0),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(15.0),
-                )),
+              prefixIcon: Icon(Icons.email),
+              counterText: '',
+              hintText: S.of(context).loginNicknameInputTitle,
+              // 未获得焦点下划线设为灰色
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.grey),
+              ),
+              //获得焦点下划线设为蓝色
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Colors.blue),
+              ),
+            ),
             validator: (v) {
+              if (v.isValidEmail()) {
+                return "Check your email";
+              }
+
               return v.trim().length > 0 ? null : "不能为空";
             });
       },
@@ -168,7 +185,7 @@ class LoginFormPage extends StatelessWidget {
       },
       builder: (context, state) {
         String text = S.of(context).loginBtnText;
-        if (state is LoginLoadingState) {
+        if (state is LoginSubmitted) {
           text = S.of(context).loginBtnLockText;
         }
 
@@ -179,7 +196,7 @@ class LoginFormPage extends StatelessWidget {
 
         return SizedBox(
             width: ScreenUtil().setWidth(300),
-            height: ScreenUtil().setHeight(40),
+            height: ScreenUtil().setHeight(60),
             child: ElevatedButton(
               style: ButtonStyle(),
               onPressed: () {
@@ -194,17 +211,22 @@ class LoginFormPage extends StatelessWidget {
 
                 return status;
               },
-              child: Text(text),
+              child: Text(
+                text,
+                style: TextStyle(fontSize: ScreenUtil().setSp(26)),
+              ),
             ));
       },
     );
   }
 
   bool _verify() {
-    Log.v(_nicknameController.text.trim().length < 1);
-    Log.v(_passwordController.text.trim().length < 6);
+    //todo 登录验证
     if (_nicknameController.text.trim().length < 1) {
-      // _nicknameController.
+      return false;
+    }
+
+    if (_nicknameController.text.trim().isValidEmail()) {
       return false;
     }
 

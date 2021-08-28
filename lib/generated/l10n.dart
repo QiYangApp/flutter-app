@@ -145,10 +145,10 @@ class S {
     );
   }
 
-  /// `Login`
+  /// `QiYang`
   String get loginAppBarTitle {
     return Intl.message(
-      'Login',
+      'QiYang',
       name: 'loginAppBarTitle',
       desc: '',
       args: [],

@@ -8,7 +8,6 @@ import 'package:QiYang/servers/splash_screen/guide_page_server.dart';
 import 'package:QiYang/servers/splash_screen/page/guide_page.dart';
 import 'package:QiYang/servers/splash_screen/page/start_page.dart';
 import 'package:QiYang/util/analytics.dart';
-import 'package:QiYang/util/log_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -32,8 +31,6 @@ Future<void> main() async {
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    Log.v(GuidePageServer.getReadStatus(), tag: 'guide_read_status');
-
     return MultiBlocProvider(providers: [
       //全局状态或者事件
       BlocProvider<AppBloc>(
@@ -84,6 +81,9 @@ class AppView extends StatelessWidget {
               //更新底部导航
               BlocProvider.of<TabSelectorBloc>(context)
                   .add(TabSelectorInitialEvent());
+
+              //同步登录状态
+              BlocProvider.of<AuthCubit>(context).sync();
 
               //已经进入过引导页
               if ((state as AppRunningStatus).guideReadStatus) {

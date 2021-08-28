@@ -1,5 +1,4 @@
 import 'package:QiYang/servers/splash_screen/splash_screen_const.dart';
-import 'package:QiYang/util/log_utils.dart';
 import 'package:QiYang/util/sp_util.dart';
 
 class GuidePageServer {

@@ -8,7 +8,7 @@ class Log  {
   static const String tag = 'DEER-LOG';
 
   static void startLog(String mes) {
-    v(">>>>>>>>>>>>> ${mes} <<<<<<<<<<<<<", tag: "init");
+    v(">>>>>>>>>>>>> $mes <<<<<<<<<<<<<", tag: "init");
   }
 
   static void init() {

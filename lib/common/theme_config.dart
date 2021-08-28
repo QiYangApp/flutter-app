@@ -8,10 +8,13 @@ class ThemeConfig {
     splashColor: Colors.transparent,
     highlightColor: Colors.transparent,
     hoverColor: Colors.transparent,
-
+    iconTheme: IconThemeData(color: Colors.black),
     textTheme: const TextTheme(
       headline1: TextStyle(color: Colors.black),
+      headline2: TextStyle(color: Colors.black),
+      headline3: TextStyle(color: Colors.black),
       headline4: TextStyle(color: Colors.black),
+      headline5: TextStyle(color: Colors.black),
       headline6: TextStyle(color: Colors.black),
       bodyText1: TextStyle(color: Colors.black),
       bodyText2: TextStyle(color: Colors.black),
@@ -23,7 +26,6 @@ class ThemeConfig {
       foregroundColor: Colors.white,
     ),
     brightness: Brightness.light,
-    iconTheme: IconThemeData(color: Colors.black),
     buttonTheme: ButtonThemeData(
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,

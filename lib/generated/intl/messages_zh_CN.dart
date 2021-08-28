@@ -33,7 +33,7 @@ class MessageLookup extends MessageLookupByLibrary {
     "home_item_agree_with" : MessageLookupByLibrary.simpleMessage("赞同"),
     "home_item_see" : MessageLookupByLibrary.simpleMessage("查看"),
     "lightMode" : MessageLookupByLibrary.simpleMessage("Light Mode"),
-    "loginAppBarTitle" : MessageLookupByLibrary.simpleMessage("登录"),
+    "loginAppBarTitle" : MessageLookupByLibrary.simpleMessage("QiYang"),
     "loginBtnLockText" : MessageLookupByLibrary.simpleMessage("登录中"),
     "loginBtnText" : MessageLookupByLibrary.simpleMessage("登录"),
     "loginNicknameInputTitle" : MessageLookupByLibrary.simpleMessage("账号"),

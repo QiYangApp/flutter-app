@@ -16,12 +16,15 @@ class ArticleClassifyResponseData with JsonConvert<ArticleClassifyResponseData> 
 	String desc;
 	String resource;
 	bool attention;
+	int see;
+	@JSONField(name: "agree_with")
+	int agreeWith;
 	@JSONField(name: "author_name")
 	String authorName;
 	@JSONField(name: "created_at")
 	String createdAt;
 	@JSONField(name: "article_id")
-	int articleId;
+	String articleId;
 	@JSONField(name: "article_classify")
 	String articleClassify;
 	String avatar;

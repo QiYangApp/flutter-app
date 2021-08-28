@@ -44,6 +44,16 @@ articleClassifyResponseDataFromJson(ArticleClassifyResponseData data, Map<String
 	if (json['attention'] != null) {
 		data.attention = json['attention'];
 	}
+	if (json['see'] != null) {
+		data.see = json['see'] is String
+				? int.tryParse(json['see'])
+				: json['see'].toInt();
+	}
+	if (json['agree_with'] != null) {
+		data.agreeWith = json['agree_with'] is String
+				? int.tryParse(json['agree_with'])
+				: json['agree_with'].toInt();
+	}
 	if (json['author_name'] != null) {
 		data.authorName = json['author_name'].toString();
 	}
@@ -51,9 +61,7 @@ articleClassifyResponseDataFromJson(ArticleClassifyResponseData data, Map<String
 		data.createdAt = json['created_at'].toString();
 	}
 	if (json['article_id'] != null) {
-		data.articleId = json['article_id'] is String
-				? int.tryParse(json['article_id'])
-				: json['article_id'].toInt();
+		data.articleId = json['article_id'].toString();
 	}
 	if (json['article_classify'] != null) {
 		data.articleClassify = json['article_classify'].toString();
@@ -70,6 +78,8 @@ Map<String, dynamic> articleClassifyResponseDataToJson(ArticleClassifyResponseDa
 	data['desc'] = entity.desc;
 	data['resource'] = entity.resource;
 	data['attention'] = entity.attention;
+	data['see'] = entity.see;
+	data['agree_with'] = entity.agreeWith;
 	data['author_name'] = entity.authorName;
 	data['created_at'] = entity.createdAt;
 	data['article_id'] = entity.articleId;

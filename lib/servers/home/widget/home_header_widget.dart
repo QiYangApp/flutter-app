@@ -1,7 +1,6 @@
 import 'package:QiYang/bloc/auth/auth_cubit.dart';
 import 'package:QiYang/router/router_path.dart';
 import 'package:QiYang/util/fluro_navigator.dart';
-import 'package:QiYang/servers/common/widget/image_widget.dart';
 import 'package:QiYang/util/image_util.dart';
 import 'package:QiYang/util/log_utils.dart';
 import 'package:flutter/cupertino.dart';

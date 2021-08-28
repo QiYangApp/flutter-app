@@ -1,8 +1,8 @@
-import 'package:QiYang/servers/article_classify/router/article_classify_route.dart';
+import 'package:QiYang/servers/article_classify/article_classify_router_bind.dart';
 import 'package:QiYang/servers/common/common_router_bind.dart';
 import 'package:QiYang/servers/home/home_router_bind.dart';
 import 'package:QiYang/servers/login/login_router_bind.dart';
-import 'package:QiYang/servers/project/router/project_route.dart';
+import 'package:QiYang/servers/project/project_router_bind.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:QiYang/servers/common/page/not_fund_page.dart';
@@ -53,20 +53,19 @@ class RouterRegister {
     BaseRouter.addRoute(HomeRouterBind());
 
     //注册全局导航
-    BaseRouter.addRoute(commonRouterBind());
+    BaseRouter.addRoute(CommonRouterBind());
 
     //注册全局导航
-    BaseRouter.addRoute(ProjectRoute());
+    BaseRouter.addRoute(ProjectRouteBind());
 
     //注册全局导航
-    BaseRouter.addRoute(ArticleClassifyRoute());
+    BaseRouter.addRoute(ArticleClassifyRouteBind());
 
     //添加授权路由
-    BaseRouter.addRoute(AuthRoute());
+    BaseRouter.addRoute(AuthRouteBind());
 
     initNotFundHandle();
     initWebViewPage();
-
   }
 
   //创建默认不存在的路由页面

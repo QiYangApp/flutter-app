@@ -1,9 +1,7 @@
 import 'package:QiYang/generated/l10n.dart';
 import 'package:QiYang/model/response/article_classify_response_model.dart';
-import 'package:QiYang/servers/article_classify/router/article_classify_route.dart';
-import 'package:QiYang/servers/common/bloc/tab/tab_selector_bloc.dart';
+import 'package:QiYang/router/router_path.dart';
 import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
-import 'package:QiYang/servers/common/widget/tab/tab_selector_widget.dart';
 import 'package:QiYang/servers/home/bloc/home_banner_cubit.dart';
 import 'package:QiYang/servers/home/bloc/home_list_bloc.dart';
 import 'package:QiYang/servers/home/widget/home_banner_widget.dart';
@@ -93,7 +91,7 @@ class _HomePageState extends State<HomePage>
       HomeListHeadWidget(
         title: S.of(context).homeRecommendedArticle,
         onTap: () {
-          NavigatorUtils.push(context, ArticleClassifyRoutePath.list,
+          NavigatorUtils.push(context, RouterPath.article_classify,
               transition: TransitionType.cupertino, replace: true);
         },
       ),

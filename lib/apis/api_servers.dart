@@ -1,5 +1,3 @@
-import 'dart:convert';
-
 import 'package:QiYang/apis/repository/ad_repository.dart';
 import 'package:QiYang/apis/repository/article_classify_repository.dart';
 import 'package:QiYang/apis/repository/auth_repository.dart';
@@ -9,6 +7,7 @@ import 'package:QiYang/model/request/banner_request_model.dart';
 import 'package:QiYang/model/request/pagination_request_model.dart';
 import 'package:QiYang/model/request/passwd_login_request_model.dart';
 import 'package:QiYang/model/response/article_classify_response_model.dart';
+import 'package:QiYang/model/response/article_detail_response_model.dart';
 import 'package:QiYang/model/response/banner_response_model.dart';
 import 'package:QiYang/model/response/bottom_navigation_response_model.dart';
 import 'package:QiYang/model/response/guide_page_response_model.dart';
@@ -68,6 +67,11 @@ class ApiServers {
   Future<ArticleClassifyResponseModel> hotHome({int page = 1, int limit = 10}) {
     return ArticleClassifyRepository.hotHome(
         PaginationRequestModel(page: page, limit: limit));
+  }
+
+  //文章详情
+  Future<ArticleDetailResponseModel> articleDetail(String id) {
+    return ArticleClassifyRepository.detail(id);
   }
 
   //---- nav -----//
