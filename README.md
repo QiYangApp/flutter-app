@@ -1,6 +1,6 @@
 # qi_yang
 
-QiYang APP
+qi yang app
 
 ## Getting Started
 

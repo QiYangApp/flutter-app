@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flutter-app.iml" filepath="$PROJECT_DIR$/.idea/flutter-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qi_yang.iml" filepath="$PROJECT_DIR$/qi_yang.iml" />
     </modules>
   </component>
 </project>
