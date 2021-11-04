@@ -8,9 +8,10 @@ import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备�
 import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
 import 'package:flutter_ume_kit_dio/flutter_ume_kit_dio.dart';
 import 'package:qi_yang/config/app_config.dart';
-import 'package:qi_yang/util/singleton/log_singleton.dart'; // Dio 网络请求调试工具
+import 'package:qi_yang/tools/singleton/log_singleton.dart';
+import 'package:qi_yang/tools/singleton/sp_singleton.dart';
 import 'package:flutter_config/flutter_config.dart';
-import 'package:qi_yang/util/singleton/sp_singleton.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 
 class Init {
   static void init(VoidCallback callback) async {
@@ -20,6 +21,12 @@ class Init {
     // await _registerUme(dio);
 
     callback();
+  }
+
+  //app 平台信息
+  static void platformInfo() async {
+    PackageInfo packageInfo = await PackageInfo.fromPlatform();
+    LogSingleton.i(packageInfo);
   }
 
   //本地文件存储
