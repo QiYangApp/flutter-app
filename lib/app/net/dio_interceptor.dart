@@ -1,7 +1,7 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:qi_yang/tools/network/interceptor/authInterceptor.dart';
+import 'package:qi_yang/tools/net/interceptor/authInterceptor.dart';
 
 class DioInterceptor {
 
