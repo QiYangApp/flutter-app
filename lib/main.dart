@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:logger/logger.dart';
+import 'package:qi_yang/app/config/net_config.dart';
 import 'package:qi_yang/init.dart';
+import 'package:qi_yang/tools/singleton/log_singleton.dart';
 
 
 void main() async {
@@ -15,6 +17,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+
+    LogSingleton.d(NetConfig.getAppUrl());
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(

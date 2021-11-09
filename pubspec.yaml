@@ -48,7 +48,7 @@ dependencies:
   cached_network_image: ^3.1.0+1
 
   #权限申请
-  permission_handler: ^8.2.6
+#  permission_handler: ^8.2.6
 
   #转圈插件
   flutter_spinkit: ^5.1.0
@@ -65,6 +65,8 @@ dependencies:
   #路由
   fluro: ^2.0.3
 
+  #路径获取
+  path_provider: ^2.0.6
   #ui
   #flui: ^0.9.2
 

@@ -7,11 +7,12 @@ import 'package:flutter_ume_kit_show_code/flutter_ume_kit_show_code.dart'; // �
 import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备信息插件包
 import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
 import 'package:flutter_ume_kit_dio/flutter_ume_kit_dio.dart';
-import 'package:qi_yang/config/app_config.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
 import 'package:qi_yang/tools/singleton/sp_singleton.dart';
 import 'package:flutter_config/flutter_config.dart';
 import 'package:package_info_plus/package_info_plus.dart';
+
+import 'app/config/app_config.dart';
 
 class Init {
   static void init(VoidCallback callback) async {

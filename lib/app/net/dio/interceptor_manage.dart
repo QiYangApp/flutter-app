@@ -1,13 +1,12 @@
 
 
 import 'package:dio/dio.dart';
-import 'package:qi_yang/tools/net/interceptor/authInterceptor.dart';
 
-class DioInterceptor {
+class InterceptorManage {
 
   late List<Interceptor> interceptor;
 
-  DioInterceptor.init({List<Interceptor>? interceptor}) {
+  InterceptorManage.init({List<Interceptor>? interceptor}) {
     this.interceptor = _merge(interceptor);
   }
 
