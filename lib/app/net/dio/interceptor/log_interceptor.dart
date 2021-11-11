@@ -1,9 +1,8 @@
 
 import 'dart:io';
 import 'package:dio/dio.dart';
-import '../../log_utils.dart';
 
-class LoggingInterceptor extends Interceptor{
+class LogInterceptor extends Interceptor{
 
   DateTime _startTime;
   DateTime _endTime;

@@ -15,10 +15,15 @@ class NetConfig {
     return _domain;
   }
 
+  //获取mock状态
+  static bool getMockEnable()
+  {
+    return _mockEnable;
+  }
+
   //获取完整地址
   static String getAppUrlSuffix() {
-    const domain = "$_domain/$_suffix";
-    return domain;
+    return "$_domain/$_suffix";
   }
 
 }

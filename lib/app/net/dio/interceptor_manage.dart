@@ -2,6 +2,8 @@
 
 import 'package:dio/dio.dart';
 
+import 'interceptor/auth_interceptor.dart';
+
 class InterceptorManage {
 
   late List<Interceptor> interceptor;
@@ -24,7 +26,7 @@ class InterceptorManage {
 
   static List<Interceptor> getDefaultInterceptor() {
     return [
-      // AuthInterceptor(),
+      AuthInterceptor(),
     ];
   }
 }
