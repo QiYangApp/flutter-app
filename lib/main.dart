@@ -18,6 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
+    Init.registerView(context);
+
     LogSingleton.d(NetConfig.getAppUrl());
 
     return MaterialApp(

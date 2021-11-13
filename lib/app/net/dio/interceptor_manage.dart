@@ -1,6 +1,8 @@
 
 
 import 'package:dio/dio.dart';
+import 'package:qi_yang/app/net/dio/interceptor/token_interceptor.dart';
+import 'package:qi_yang/app/net/dio/interceptor/version_interceptor.dart';
 
 import 'interceptor/auth_interceptor.dart';
 
@@ -27,6 +29,9 @@ class InterceptorManage {
   static List<Interceptor> getDefaultInterceptor() {
     return [
       AuthInterceptor(),
+      TokenInterceptor(),
+      LogInterceptor(),
+      VersionInterceptor(),
     ];
   }
 }

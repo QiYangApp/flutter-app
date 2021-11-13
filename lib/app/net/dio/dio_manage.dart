@@ -32,9 +32,9 @@ class DioManage {
   //获取dio 配置
   BaseOptions _getOptions() {
     return BaseOptions(
-        responseType: ResponseType.json,
-        baseUrl: NetConfig.getAppUrlSuffix(),
-        headers: _getHeaders());
+      responseType: ResponseType.json,
+      baseUrl: NetConfig.getAppUrlSuffix(),
+    );
   }
 
   //获取请求代理
@@ -57,14 +57,5 @@ class DioManage {
   //获取interceptor
   List<Interceptor> _getInterceptors() {
     return InterceptorManage.init().getInterceptors();
-  }
-
-  Map<String, String> _getHeaders() {
-    final Map<String, String> headers = {};
-    final String apiVersion = AppConfig.version;
-    headers[Headers.acceptHeader] =
-    "application/vnd.heroku+json; version=$apiVersion";
-
-    return headers;
   }
 }

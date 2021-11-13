@@ -1,25 +1,26 @@
 
 import 'dart:io';
 import 'package:dio/dio.dart';
+import 'package:qi_yang/tools/singleton/log_singleton.dart';
 
 class LogInterceptor extends Interceptor{
 
-  DateTime _startTime;
-  DateTime _endTime;
+  late DateTime _startTime;
+  late DateTime _endTime;
 
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
     _startTime = DateTime.now();
-    Log.d('----------Start----------');
+    LogSingleton.d('----------Start----------');
     if (options.queryParameters.isEmpty) {
-      Log.d('RequestUrl: ' + options.baseUrl + options.path);
+      LogSingleton.d('RequestUrl: ' + options.baseUrl + options.path);
     } else {
-      Log.d('RequestUrl: ' + options.baseUrl + options.path + '?' + Transformer.urlEncodeMap(options.queryParameters));
+      LogSingleton.d('RequestUrl: ' + options.baseUrl + options.path + '?' + Transformer.urlEncodeMap(options.queryParameters));
     }
-    Log.d('RequestMethod: ' + options.method);
-    Log.d('RequestHeaders:' + options.headers.toString());
-    Log.d('RequestContentType: ${options.contentType}');
-    Log.d('RequestData: ${options.data.toString()}');
+    LogSingleton.d('RequestMethod: ' + options.method);
+    LogSingleton.d('RequestHeaders:' + options.headers.toString());
+    LogSingleton.d('RequestContentType: ${options.contentType}');
+    LogSingleton.d('RequestData: ${options.data.toString()}');
 
     return super.onRequest(options, handler);
   }
@@ -29,19 +30,19 @@ class LogInterceptor extends Interceptor{
     _endTime = DateTime.now();
     int duration = _endTime.difference(_startTime).inMilliseconds;
     if (response.statusCode == HttpStatus.ok) {
-      Log.d('ResponseCode: ${response.statusCode}');
+      LogSingleton.d('ResponseCode: ${response.statusCode}');
     } else {
-      Log.e('ResponseCode: ${response.statusCode}');
+      LogSingleton.e('ResponseCode: ${response.statusCode}');
     }
     // 输出结果
-    Log.json(response.data.toString());
-    Log.d('----------End: $duration 毫秒----------');
+    LogSingleton.d(response.data.toString());
+    LogSingleton.d('----------End: $duration 毫秒----------');
     return super.onResponse(response, handler);
   }
 
   @override
   void onError(DioError err,ErrorInterceptorHandler handler) {
-    Log.d('----------Error-----------');
+    LogSingleton.d('----------Error-----------');
     return super.onError(err, handler);
   }
 }

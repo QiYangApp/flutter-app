@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
 import 'package:flutter_ume_kit_ui/flutter_ume_kit_ui.dart'; // UI 插件包
 import 'package:flutter_ume_kit_perf/flutter_ume_kit_perf.dart'; // 性能插件包
@@ -7,6 +8,7 @@ import 'package:flutter_ume_kit_show_code/flutter_ume_kit_show_code.dart'; // �
 import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备信息插件包
 import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
 import 'package:flutter_ume_kit_dio/flutter_ume_kit_dio.dart';
+import 'package:qi_yang/app/net/http_repository_manage.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
 import 'package:qi_yang/tools/singleton/sp_singleton.dart';
 import 'package:flutter_config/flutter_config.dart';
@@ -19,13 +21,30 @@ class Init {
     await _registerLogger();
     await _registerConfig();
     await _registerStore();
-    // await _registerUme(dio);
+
+    await _registerNet();
+    await _registerUme(HttpRepositoryManage.instance.getDio());
 
     callback();
   }
 
+  //页面适配
+  static Future<void> registerView(BuildContext context) async {
+    ScreenUtil.init(
+        BoxConstraints(
+            maxWidth: MediaQuery.of(context).size.width,
+            maxHeight: MediaQuery.of(context).size.height),
+        designSize: const Size(360, 690),
+        orientation: Orientation.portrait);
+  }
+
+  //网络部分
+  static Future<void> _registerNet() async {
+    HttpRepositoryManage();
+  }
+
   //app 平台信息
-  static void platformInfo() async {
+  static void _platformInfo() async {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     LogSingleton.i(packageInfo);
   }
@@ -42,15 +61,15 @@ class Init {
   }
 
   //注册日志
-  static Future<void>  _registerLogger() async {
+  static Future<void> _registerLogger() async {
     if (AppConfig.hasDevelopmentEnv()) {
       await LogSingleton.getInstance();
     }
   }
 
   //注册 ume debug
-  Future<void> _registerUme(Dio dio) async {
-    if (AppConfig.hasDevelopmentEnv()) {
+  static Future<void> _registerUme(Dio? dio) async {
+    if (AppConfig.hasDevelopmentEnv() && dio != null) {
       PluginManager.instance
         ..register(const WidgetInfoInspector())
         ..register(const WidgetDetailInspector())
