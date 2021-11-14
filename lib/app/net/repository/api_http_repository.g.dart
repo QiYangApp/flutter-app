@@ -1,13 +1,13 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'api_client.dart';
+part of 'api_http_repository.dart';
 
 // **************************************************************************
 // RetrofitGenerator
 // **************************************************************************
 
-class _ApiClient implements ApiClient {
-  _ApiClient(this._dio, {this.baseUrl});
+class _ApiHttpRepository implements ApiHttpRepository {
+  _ApiHttpRepository(this._dio, {this.baseUrl});
 
   final Dio _dio;
 

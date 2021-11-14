@@ -6,10 +6,8 @@ import 'package:qi_yang/app/net/entity/base_entity.dart';
 import 'package:qi_yang/models/response/test_entity.dart';
 import 'package:retrofit/retrofit.dart';
 
-
 abstract class AbstractHttpRepository {
   const AbstractHttpRepository();
 
-  @GET("/test")
   Future<BaseEntity<TestEntity>> test();
 }

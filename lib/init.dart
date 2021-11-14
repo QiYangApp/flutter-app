@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
 import 'package:flutter_ume_kit_ui/flutter_ume_kit_ui.dart'; // UI 插件包
@@ -8,24 +9,27 @@ import 'package:flutter_ume_kit_show_code/flutter_ume_kit_show_code.dart'; // �
 import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备信息插件包
 import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
 import 'package:flutter_ume_kit_dio/flutter_ume_kit_dio.dart';
+import 'package:qi_yang/app/net/dio/dio_manage.dart';
 import 'package:qi_yang/app/net/http_repository_manage.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
 import 'package:qi_yang/tools/singleton/sp_singleton.dart';
 import 'package:flutter_config/flutter_config.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
+import 'app/bloc/app_bloc_observer.dart';
 import 'app/config/app_config.dart';
 
 class Init {
-  static void init(VoidCallback callback) async {
+  static Future<void> init(VoidCallback callback) async {
     await _registerLogger();
     await _registerConfig();
     await _registerStore();
 
     await _registerNet();
-    await _registerUme(HttpRepositoryManage.instance.getDio());
+    await _registerUme(DioManage.getDio());
+    await _registerBlocObserver();
 
-    callback();
+    return callback();
   }
 
   //页面适配
@@ -40,7 +44,8 @@ class Init {
 
   //网络部分
   static Future<void> _registerNet() async {
-    HttpRepositoryManage();
+    await DioManage.init();
+    await HttpRepositoryManage.init();
   }
 
   //app 平台信息
@@ -51,7 +56,7 @@ class Init {
 
   //本地文件存储
   static Future<void> _registerStore() async {
-    await SpSingleton.getInstance();
+    await SpSingleton.init();
   }
 
   //注册配置
@@ -62,9 +67,13 @@ class Init {
 
   //注册日志
   static Future<void> _registerLogger() async {
-    if (AppConfig.hasDevelopmentEnv()) {
-      await LogSingleton.getInstance();
-    }
+    // if (AppConfig.hasDevelopmentEnv()) {
+    await LogSingleton.init();
+    // }
+  }
+
+  static Future<void> _registerBlocObserver() async {
+    Bloc.observer = AppBlocObserver();
   }
 
   //注册 ume debug

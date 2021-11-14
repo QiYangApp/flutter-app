@@ -80,6 +80,9 @@ dependencies:
   #屏幕适配
   flutter_screenutil: ^5.0.0+2
 
+  #bloc
+  flutter_bloc: ^7.3.3
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

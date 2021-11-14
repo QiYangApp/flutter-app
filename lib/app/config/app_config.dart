@@ -2,8 +2,8 @@ import 'package:flutter/foundation.dart';
 
 class AppConfig {
   /// debug开关，上线需要关闭
-  /// App运行在Release环境时，inProduction为false；当App运行在Debug和Profile环境时，inProduction为true, kReleaseMode
-  static const bool inProduction = kDebugMode;
+  /// App运行在Release环境时，inProduction为false；当App运行在Debug和Profile环境时，inProduction为true, kReleaseMode kDebugMode
+  static const bool inProduction = kReleaseMode;
 
   static bool isDriverTest = true;
   static bool isUnitTest = false;

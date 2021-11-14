@@ -1,33 +1,28 @@
 import 'package:dio/dio.dart';
 import 'package:qi_yang/app/config/net_config.dart';
+import 'package:qi_yang/app/net/entity/base_entity.dart';
 import 'package:qi_yang/app/net/repository/abstract_http_repository.dart';
 import 'package:qi_yang/app/net/repository/api_http_repository.dart';
 import 'package:qi_yang/app/net/repository/mock_http_repository.dart';
+import 'package:qi_yang/models/response/test_entity.dart';
 
 class HttpRepositoryManage {
-  static final HttpRepositoryManage _singleton = HttpRepositoryManage._();
 
-  static HttpRepositoryManage get instance => HttpRepositoryManage();
+  HttpRepositoryManage._internal();
 
-  factory HttpRepositoryManage() => _singleton;
+  static final HttpRepositoryManage _instance = HttpRepositoryManage._internal();
 
-  static late AbstractHttpRepository _repository;
+  late AbstractHttpRepository _repository;
 
-  static AbstractHttpRepository get repository => _repository;
-
-  Dio? getDio() {
+  static init() async {
     if (NetConfig.getMockEnable()) {
-      return null;
+      _instance._repository = MockHttpRepository.instance;
+    } else {
+      _instance._repository = ApiHttpRepository();
     }
-
-    return (_repository as ApiHttpRepository).dio;
   }
 
-  HttpRepositoryManage._() {
-    if (NetConfig.getMockEnable()) {
-      _repository = MockHttpRepository.instance;
-    } else {
-      _repository = ApiHttpRepository.instance;
-    }
+  static Future<BaseEntity<TestEntity>> test() {
+    return _instance._repository.test();
   }
 }

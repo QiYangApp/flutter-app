@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:logger/logger.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:qi_yang/app/config/app_config.dart';
 import 'package:qi_yang/app/config/net_config.dart';
+import 'package:qi_yang/app/net/http_repository_manage.dart';
 import 'package:qi_yang/init.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
-
+import 'package:qi_yang/tools/singleton/sp_singleton.dart';
+import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
 
 void main() async {
-  Init.init(() {
-    runApp(const MyApp());
+  await Init.init(() {
+    runApp(injectUMEWidget(
+        enable: AppConfig.hasDevelopmentEnv(),
+        child: ScreenUtilInit(
+            designSize: const Size(375, 850), builder: () => const MyApp())));
   });
 }
 
@@ -17,10 +23,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
-    Init.registerView(context);
-
-    LogSingleton.d(NetConfig.getAppUrl());
+    // Init.registerView(context);
 
     return MaterialApp(
       title: 'Flutter Demo',
@@ -75,6 +78,12 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    LogSingleton.d(NetConfig.getAppUrl());
+    LogSingleton.d(HttpRepositoryManage.test());
+
+    LogSingleton.d(HttpRepositoryManage.test());
+    LogSingleton.d(HttpRepositoryManage.test());
+    LogSingleton.d(HttpRepositoryManage.test());
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //

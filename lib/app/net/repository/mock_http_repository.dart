@@ -20,6 +20,6 @@ class MockHttpRepository extends AbstractHttpRepository {
 
   @override
   Future<BaseEntity<TestEntity>> test() {
-    return Future.value(_getBaseEntity(TestEntity().fromJson({"test": 1})));
+    return Future.value(_getBaseEntity(TestEntity().toJson()));
   }
 }

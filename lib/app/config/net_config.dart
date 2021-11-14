@@ -2,13 +2,13 @@ import 'package:flutter_config/flutter_config.dart';
 
 class NetConfig {
   //域名
-  static final String _domain = FlutterConfig.get('APP_URL').toString();
+  static final String _domain = FlutterConfig.get('API_URL');
 
   //后缀
   static final String _suffix = FlutterConfig.get('API_URL_SUFFIX');
 
   //是否启用mock
-  static final bool _mockEnable = FlutterConfig.get('APP_MOCK_ENABLE');
+  static final String _mockEnable = FlutterConfig.get('APP_MOCK_ENABLE');
 
   //获取域名
   static String getAppUrl() {
@@ -16,16 +16,14 @@ class NetConfig {
   }
 
   //获取mock状态
-  static bool getMockEnable()
-  {
-    return _mockEnable;
+  static bool getMockEnable() {
+    return _mockEnable == 'true';
   }
 
   //获取完整地址
   static String getAppUrlSuffix() {
     return "$_domain/$_suffix";
   }
-
 }
 
 class ProxyConfig {
@@ -39,14 +37,12 @@ class ProxyConfig {
   static final String _pem = FlutterConfig.get('API_PEM');
 
   //获取代理 pem 证书
-  static String getProxyPem()
-  {
+  static String getProxyPem() {
     return _pem;
   }
 
   //获取代理设置
-  static String getProxy()
-  {
+  static String getProxy() {
     return _enable == false ? 'DIRECT' : "PROXY $_domain";
   }
 }
