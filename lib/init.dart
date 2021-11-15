@@ -18,6 +18,8 @@ import 'package:package_info_plus/package_info_plus.dart';
 
 import 'app/bloc/app_bloc_observer.dart';
 import 'app/config/app_config.dart';
+import 'app/router/router_manage.dart';
+import 'app/router/router_register.dart';
 
 class Init {
   static Future<void> init(VoidCallback callback) async {
@@ -28,6 +30,9 @@ class Init {
     await _registerNet();
     await _registerUme(DioManage.getDio());
     await _registerBlocObserver();
+    await _registerRoute();
+
+    _platformInfo();
 
     return callback();
   }
@@ -67,13 +72,19 @@ class Init {
 
   //注册日志
   static Future<void> _registerLogger() async {
-    // if (AppConfig.hasDevelopmentEnv()) {
-    await LogSingleton.init();
-    // }
+    if (AppConfig.hasDevelopmentEnv()) {
+      await LogSingleton.init();
+    }
   }
 
   static Future<void> _registerBlocObserver() async {
     Bloc.observer = AppBlocObserver();
+  }
+
+  //
+  static Future<void> _registerRoute() async {
+    await RouterManage.init();
+    await RouterRegister.init();
   }
 
   //注册 ume debug

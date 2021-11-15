@@ -83,6 +83,18 @@ dependencies:
   #bloc
   flutter_bloc: ^7.3.3
 
+  #布局
+  flutter_staggered_grid_view: ^0.4.1
+
+  #底部滑动
+  smooth_page_indicator: ^1.0.0+2
+
+  #web view
+  webview_flutter: ^2.3.1
+
+  #h5 链接页面
+  url_launcher: ^6.0.12
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

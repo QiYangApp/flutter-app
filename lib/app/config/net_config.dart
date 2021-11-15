@@ -24,6 +24,11 @@ class NetConfig {
   static String getAppUrlSuffix() {
     return "$_domain/$_suffix";
   }
+
+  //获取 web view page address
+  static String getWebViewPage() {
+    return FlutterConfig.get('WEB_VIEW_PAGE');
+  }
 }
 
 class ProxyConfig {
