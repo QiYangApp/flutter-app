@@ -8,7 +8,7 @@ class AppConfig {
   static bool isDriverTest = true;
   static bool isUnitTest = false;
 
-  static const String appId = 'com.myadream.qiyang';
+  static const String appId = 'com.myadream.QiYang';
   static const String appName = 'qiyang';
   static const String version = '0.0.1';
 

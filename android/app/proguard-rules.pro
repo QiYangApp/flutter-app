@@ -1,1 +1,1 @@
--keep class com.myadream.qiyang.BuildConfig { *; }
+-keep class com.myadream.QiYang.BuildConfig { *; }

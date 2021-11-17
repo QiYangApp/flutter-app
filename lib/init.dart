@@ -9,6 +9,8 @@ import 'package:flutter_ume_kit_show_code/flutter_ume_kit_show_code.dart'; // �
 import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备信息插件包
 import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
 import 'package:flutter_ume_kit_dio/flutter_ume_kit_dio.dart';
+import 'package:jpush_flutter/jpush_flutter.dart';
+import 'package:qi_yang/app/config/jpush_config.dart';
 import 'package:qi_yang/app/net/dio/dio_manage.dart';
 import 'package:qi_yang/app/net/http_repository_manage.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
@@ -32,6 +34,7 @@ class Init {
     await _registerBlocObserver();
     await _registerRoute();
 
+    _registerJPush();
     _platformInfo();
 
     return callback();
@@ -103,5 +106,32 @@ class Init {
         ..register(Console())
         ..register(DioInspector(dio: dio));
     }
+  }
+
+  //极光推送
+  static Future<void> _registerJPush() async {
+    final JPush jpush = JPush();
+    jpush.addEventHandler(
+      // 接收通知回调方法。
+      onReceiveNotification: (Map<String, dynamic> message) async {
+        LogSingleton.i("flutter onReceiveNotification: $message");
+      },
+      // 点击通知回调方法。
+      onOpenNotification: (Map<String, dynamic> message) async {
+        LogSingleton.i("flutter onOpenNotification: $message");
+      },
+      // 接收自定义消息回调方法。
+      onReceiveMessage: (Map<String, dynamic> message) async {
+        LogSingleton.i("flutter onReceiveMessage: $message");
+      },
+    );
+
+    jpush.setup(
+      appKey: JpushConfig.jPushAppKey,
+      channel: JpushConfig.jPushChannel,
+      production: JpushConfig.getJPushDebug(),
+      debug: JpushConfig.getJPushProduction()
+    );
+
   }
 }

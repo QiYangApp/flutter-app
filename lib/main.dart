@@ -17,6 +17,7 @@ void main() async {
   });
 }
 
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -78,12 +79,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    LogSingleton.d(NetConfig.getAppUrl());
-    LogSingleton.d(HttpRepositoryManage.test());
 
-    LogSingleton.d(HttpRepositoryManage.test());
-    LogSingleton.d(HttpRepositoryManage.test());
-    LogSingleton.d(HttpRepositoryManage.test());
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
