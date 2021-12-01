@@ -6,14 +6,15 @@ import 'package:qi_yang/app/net/http_repository_manage.dart';
 import 'package:qi_yang/init.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
 import 'package:qi_yang/tools/singleton/sp_singleton.dart';
-import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
+import 'package:flutter_ume/flutter_ume.dart';
+import 'package:qi_yang/views/app/app_view.dart'; // UME 框架
 
 void main() async {
   await Init.init(() {
     runApp(injectUMEWidget(
         enable: AppConfig.hasDevelopmentEnv(),
         child: ScreenUtilInit(
-            designSize: const Size(375, 850), builder: () => const MyApp())));
+            designSize: const Size(375, 850), builder: () => const App())));
   });
 }
 

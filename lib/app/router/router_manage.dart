@@ -35,4 +35,8 @@ class RouterManage {
     final webViewPage = _instance._webViewPage;
     return "$webViewPage/$path";
   }
+
+  static FluroRouter getRoute() {
+    return _instance._router;
+  }
 }
