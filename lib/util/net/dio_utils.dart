@@ -19,7 +19,7 @@ List<Interceptor> _interceptors = [];
 
 class DioInit {
   static void init({List<Interceptor> interceptors}) {
-    _interceptors = [...?interceptors, ...DioInit().getDefaultInterceptor()];
+    _interceptors = [...interceptors, ...DioInit().getDefaultInterceptor()];
   }
 
   //获取默认 Interceptor 组件
@@ -30,15 +30,17 @@ class DioInit {
 
     defaultInterceptors.add(TokenInterceptor());
 
-    defaultInterceptors.add(LogInterceptor());
-
     //缓存中间件
     defaultInterceptors.add(DioCacheManager(CacheConfig(
-        databaseName: "qi_yang",
-        defaultMaxAge: Duration(seconds: 180),
-        defaultMaxStale: Duration(seconds: 3600),
-        baseUrl: DioConfig.getDomain()
-    )).interceptor);
+            databaseName: "qi_yang",
+            defaultMaxAge: Duration(seconds: 180),
+            defaultMaxStale: Duration(seconds: 3600),
+            baseUrl: DioConfig.getDomain()))
+        .interceptor);
+
+    //开启请求日志 open request log
+    // defaultInterceptors.add(LogInterceptor());
+    defaultInterceptors.add(LogInterceptor(responseBody: false));
 
     return defaultInterceptors;
   }

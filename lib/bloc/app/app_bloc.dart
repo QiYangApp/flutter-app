@@ -11,7 +11,6 @@ class AppBloc extends Bloc<AppEvent, AppState> {
   AppBloc(bool guideReadStatus)
       : super(AppRunningStatus(guideReadStatus: guideReadStatus));
 
-  @override
   Stream<AppState> mapEventToState(
     AppEvent event,
   ) async* {

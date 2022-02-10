@@ -5,7 +5,6 @@ import 'package:fluttertoast/fluttertoast.dart';
 
 // ignore: must_be_immutable
 class WillPopScopeWidget extends StatelessWidget {
-
   final Widget child;
 
   DateTime _lastPressedAt; //上次点击时间
@@ -40,15 +39,13 @@ class WillPopScopeWidget extends StatelessWidget {
 
   void toast() {
     Fluttertoast.showToast(
-        msg: "再按一次退出",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.black12,
-        textColor: Colors.black,
-        fontSize: 16.0,
+      msg: "再按一次退出",
+      toastLength: Toast.LENGTH_SHORT,
+      gravity: ToastGravity.CENTER,
+      timeInSecForIosWeb: 1,
+      backgroundColor: Colors.black12,
+      textColor: Colors.black,
+      fontSize: 16.0,
     );
   }
-
 }
-

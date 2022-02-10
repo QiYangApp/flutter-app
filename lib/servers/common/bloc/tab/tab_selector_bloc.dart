@@ -15,7 +15,6 @@ part 'tab_selector_event.dart';
 class TabSelectorBloc extends Bloc<TabSelectorEvent, TabSelectorState> {
   TabSelectorBloc() : super(TabSelectorInitial());
 
-  @override
   Stream<TabSelectorState> mapEventToState(
     TabSelectorEvent event,
   ) async* {

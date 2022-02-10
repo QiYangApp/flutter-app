@@ -1,13 +1,13 @@
 import 'dart:async';
 
+import 'package:bloc/bloc.dart';
+import 'package:equatable/equatable.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:qi_yang/apis/api_servers.dart';
 import 'package:qi_yang/common/dioConfig.dart';
 import 'package:qi_yang/model/response/token_response_model.dart';
 import 'package:qi_yang/model/response/user_info_response_model.dart';
 import 'package:qi_yang/util/sp_util.dart';
-import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'login_event.dart';
 
@@ -16,7 +16,6 @@ part 'login_state.dart';
 class LoginBloc extends Bloc<LoginEvent, LoginState> {
   LoginBloc() : super(LoginLoadingState());
 
-  @override
   Stream<LoginState> mapEventToState(
     LoginEvent event,
   ) async* {

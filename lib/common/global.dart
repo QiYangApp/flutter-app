@@ -1,24 +1,23 @@
-import 'package:dio/dio.dart';
-import 'package:flutter_bugly/flutter_bugly.dart';
-import 'package:flutter_config/flutter_config.dart';
-import 'package:flutter_easyloading/flutter_easyloading.dart';
-import 'package:jpush_flutter/jpush_flutter.dart';
-import 'package:package_info_plus/package_info_plus.dart';
-import 'package:qi_yang/common/common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_bugly/flutter_bugly.dart';
+import 'package:flutter_config/flutter_config.dart';
+import 'package:flutter_easyloading/flutter_easyloading.dart';
+import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
+import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
+import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备信息插件包
+import 'package:flutter_ume_kit_perf/flutter_ume_kit_perf.dart'; // 性能插件包
+import 'package:flutter_ume_kit_show_code/flutter_ume_kit_show_code.dart'; // 代码查看插件包
+import 'package:flutter_ume_kit_ui/flutter_ume_kit_ui.dart'; // UI 插件包
+import 'package:jpush_flutter/jpush_flutter.dart';
+import 'package:package_info_plus/package_info_plus.dart';
+import 'package:qi_yang/bloc/app_bloc_observer.dart';
+import 'package:qi_yang/common/common.dart';
 import 'package:qi_yang/router/router.dart';
 import 'package:qi_yang/util/log_utils.dart';
 import 'package:qi_yang/util/net/dio_utils.dart';
-import 'package:qi_yang/bloc/app_bloc_observer.dart';
 import 'package:qi_yang/util/sp_util.dart';
-import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
-import 'package:flutter_ume_kit_ui/flutter_ume_kit_ui.dart'; // UI 插件包
-import 'package:flutter_ume_kit_perf/flutter_ume_kit_perf.dart'; // 性能插件包
-import 'package:flutter_ume_kit_show_code/flutter_ume_kit_show_code.dart'; // 代码查看插件包
-import 'package:flutter_ume_kit_device/flutter_ume_kit_device.dart'; // 设备信息插件包
-import 'package:flutter_ume_kit_console/flutter_ume_kit_console.dart'; // debugPrint 插件包
 
 class Global {
   static void init(VoidCallback callback) async {
@@ -133,7 +132,12 @@ class Global {
   }
 
   static Future<void> blocObserverInit() async {
-    Bloc.observer = AppBlocObserver();
+    BlocOverrides.runZoned(
+      () {
+        // Use cubits...
+      },
+      blocObserver: AppBlocObserver(),
+    );
   }
 
   //启动极光推送

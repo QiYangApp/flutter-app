@@ -49,21 +49,21 @@ class TokenInterceptor extends Interceptor {
 
   @override
   Future<void> onResponse(Response response, ResponseInterceptorHandler handler) async {
-    if (response != null && response.statusCode == HttpStatus.unauthorized) {
-      Log.d('-----------自动刷新Token------------');
-      final Dio dio = DioUtils.instance.dio;
-      dio.interceptors.requestLock.lock();
-      _tokenDio.interceptors.responseLock.lock();
-
-      final String accessToken = await getToken();
-
-      Log.e('-----------NewToken: $accessToken ------------');
-      SpUtil.putString(Token.accessToken, accessToken);
-      dio.interceptors.requestLock.unlock();
-      _tokenDio.interceptors.responseLock.lock();
-
-      response = await retry(response, accessToken);
-    }
+    // if (response != null && response.statusCode == HttpStatus.unauthorized) {
+    //   Log.d('-----------自动刷新Token------------');
+    //   final Dio dio = DioUtils.instance.dio;
+    //   dio.interceptors.requestLock.lock();
+    //   _tokenDio.interceptors.responseLock.lock();
+    //
+    //   final String accessToken = await getToken();
+    //
+    //   Log.e('-----------NewToken: $accessToken ------------');
+    //   SpUtil.putString(Token.accessToken, accessToken);
+    //   dio.interceptors.requestLock.unlock();
+    //   _tokenDio.interceptors.responseLock.lock();
+    //
+    //   response = await retry(response, accessToken);
+    // }
 
     return super.onResponse(response, handler);
   }

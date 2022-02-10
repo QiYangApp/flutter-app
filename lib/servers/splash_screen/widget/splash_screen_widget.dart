@@ -68,7 +68,6 @@ class _SplashScreenWidgetState extends State<SplashScreenWidget> {
 
   @override
   Widget build(BuildContext context) {
-
     timerUtil.startCountDown();
 
     return Scaffold(

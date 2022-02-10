@@ -14,7 +14,6 @@ part 'guide_page_state.dart';
 class GuidePageBloc extends Bloc<GuidePageEvent, GuidePageState> {
   GuidePageBloc() : super(GuidePageInitial());
 
-  @override
   Stream<GuidePageState> mapEventToState(
     GuidePageEvent event,
   ) async* {

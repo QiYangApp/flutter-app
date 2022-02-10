@@ -1,13 +1,13 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:qi_yang/bloc/auth/auth_cubit.dart';
 import 'package:qi_yang/generated/l10n.dart';
 import 'package:qi_yang/servers/common/widget/progress_view_widget.dart';
 import 'package:qi_yang/servers/login/bloc/login_bloc.dart';
 import 'package:qi_yang/util/fluro_navigator.dart';
 import 'package:qi_yang/util/validator/EmailValidator.dart';
-import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class LoginFormPage extends StatelessWidget {
   final TextEditingController _nicknameController = new TextEditingController();

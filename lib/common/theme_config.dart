@@ -20,7 +20,6 @@ class ThemeConfig {
       bodyText2: TextStyle(color: Colors.black),
     ),
     primaryColor: Colors.white,
-    accentColor: Colors.white,
     indicatorColor: Colors.white,
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
       foregroundColor: Colors.white,

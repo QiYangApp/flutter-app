@@ -1,8 +1,8 @@
-import 'package:qi_yang/model/response/guide_page_response_model.dart';
-import 'package:qi_yang/servers/common/widget/image_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intro_views_flutter/intro_views_flutter.dart';
+import 'package:qi_yang/model/response/guide_page_response_model.dart';
+import 'package:qi_yang/servers/common/widget/image_widget.dart';
 import 'package:qi_yang/util/hex_color.dart';
 
 class GuidePageWidget extends StatefulWidget {
