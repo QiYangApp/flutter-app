@@ -1,6 +1,6 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:QiYang/router/router.dart';
+import 'package:qi_yang/router/router.dart';
 
 /// fluro的路由跳转工具类
 class NavigatorUtils {

@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:QiYang/apis/api_servers.dart';
-import 'package:QiYang/model/response/guide_page_response_model.dart';
+import 'package:qi_yang/apis/api_servers.dart';
+import 'package:qi_yang/model/response/guide_page_response_model.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 

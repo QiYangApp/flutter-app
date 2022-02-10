@@ -1,7 +1,7 @@
-import 'package:QiYang/apis/api_servers.dart';
-import 'package:QiYang/model/request/banner_request_model.dart';
-import 'package:QiYang/model/response/banner_response_model.dart';
-import 'package:QiYang/util/log_utils.dart';
+import 'package:qi_yang/apis/api_servers.dart';
+import 'package:qi_yang/model/request/banner_request_model.dart';
+import 'package:qi_yang/model/response/banner_response_model.dart';
+import 'package:qi_yang/util/log_utils.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 

@@ -1,13 +1,13 @@
-import 'package:QiYang/router/router_path.dart';
-import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
-import 'package:QiYang/servers/common/widget/image_widget.dart';
+import 'package:qi_yang/router/router_path.dart';
+import 'package:qi_yang/servers/common/widget/progress_view_widget.dart';
+import 'package:qi_yang/servers/common/widget/image_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:QiYang/servers/splash_screen/bloc/start_page_bloc.dart';
-import 'package:QiYang/servers/splash_screen/widget/splash_screen_widget.dart';
-import 'package:QiYang/util/fluro_navigator.dart';
+import 'package:qi_yang/servers/splash_screen/bloc/start_page_bloc.dart';
+import 'package:qi_yang/servers/splash_screen/widget/splash_screen_widget.dart';
+import 'package:qi_yang/util/fluro_navigator.dart';
 
 class StartPage extends StatefulWidget {
   @override

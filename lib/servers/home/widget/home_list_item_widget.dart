@@ -1,10 +1,10 @@
-import 'package:QiYang/generated/l10n.dart';
-import 'package:QiYang/model/const/article_classify_const.dart';
-import 'package:QiYang/model/response/article_classify_response_model.dart';
-import 'package:QiYang/router/router_path.dart';
-import 'package:QiYang/servers/home/bloc/home_list_bloc.dart';
-import 'package:QiYang/util/fluro_navigator.dart';
-import 'package:QiYang/util/image_util.dart';
+import 'package:qi_yang/generated/l10n.dart';
+import 'package:qi_yang/model/const/article_classify_const.dart';
+import 'package:qi_yang/model/response/article_classify_response_model.dart';
+import 'package:qi_yang/router/router_path.dart';
+import 'package:qi_yang/servers/home/bloc/home_list_bloc.dart';
+import 'package:qi_yang/util/fluro_navigator.dart';
+import 'package:qi_yang/util/image_util.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

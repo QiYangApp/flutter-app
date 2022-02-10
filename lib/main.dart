@@ -1,22 +1,22 @@
 import 'dart:io';
 
-import 'package:QiYang/bloc/app/app_bloc.dart';
-import 'package:QiYang/bloc/auth/auth_cubit.dart';
-import 'package:QiYang/servers/splash_screen/bloc/guide_page_bloc.dart';
-import 'package:QiYang/servers/splash_screen/bloc/start_page_bloc.dart';
-import 'package:QiYang/servers/splash_screen/guide_page_server.dart';
-import 'package:QiYang/servers/splash_screen/page/guide_page.dart';
-import 'package:QiYang/servers/splash_screen/page/start_page.dart';
-import 'package:QiYang/util/analytics.dart';
+import 'package:qi_yang/bloc/app/app_bloc.dart';
+import 'package:qi_yang/bloc/auth/auth_cubit.dart';
+import 'package:qi_yang/servers/splash_screen/bloc/guide_page_bloc.dart';
+import 'package:qi_yang/servers/splash_screen/bloc/start_page_bloc.dart';
+import 'package:qi_yang/servers/splash_screen/guide_page_server.dart';
+import 'package:qi_yang/servers/splash_screen/page/guide_page.dart';
+import 'package:qi_yang/servers/splash_screen/page/start_page.dart';
+import 'package:qi_yang/util/analytics.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:QiYang/bloc/theme/theme_cubit.dart';
-import 'package:QiYang/common/common.dart';
-import 'package:QiYang/router/router.dart';
-import 'package:QiYang/servers/common/bloc/tab/tab_selector_bloc.dart';
+import 'package:qi_yang/bloc/theme/theme_cubit.dart';
+import 'package:qi_yang/common/common.dart';
+import 'package:qi_yang/router/router.dart';
+import 'package:qi_yang/servers/common/bloc/tab/tab_selector_bloc.dart';
 
 import 'common/global.dart';
 import 'generated/l10n.dart';

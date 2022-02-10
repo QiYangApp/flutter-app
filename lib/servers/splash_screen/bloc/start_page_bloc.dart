@@ -1,8 +1,8 @@
 import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:QiYang/apis/api_servers.dart';
-import 'package:QiYang/model/response/start_page_response_model.dart';
+import 'package:qi_yang/apis/api_servers.dart';
+import 'package:qi_yang/model/response/start_page_response_model.dart';
 
 part 'start_page_event.dart';
 

@@ -1,9 +1,9 @@
-import 'package:QiYang/apis/apis.dart';
-import 'package:QiYang/model/request/banner_request_model.dart';
-import 'package:QiYang/model/response/banner_response_model.dart';
-import 'package:QiYang/model/response/guide_page_response_model.dart';
-import 'package:QiYang/model/response/start_page_response_model.dart';
-import 'package:QiYang/util/net/dio_utils.dart';
+import 'package:qi_yang/apis/apis.dart';
+import 'package:qi_yang/model/request/banner_request_model.dart';
+import 'package:qi_yang/model/response/banner_response_model.dart';
+import 'package:qi_yang/model/response/guide_page_response_model.dart';
+import 'package:qi_yang/model/response/start_page_response_model.dart';
+import 'package:qi_yang/util/net/dio_utils.dart';
 
 class AdRepository {
   //查询启动页数据

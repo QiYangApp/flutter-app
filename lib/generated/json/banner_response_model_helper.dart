@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/banner_response_model.dart';
+import 'package:qi_yang/model/response/banner_response_model.dart';
 
 bannerResponseModelFromJson(BannerResponseModel data, Map<String, dynamic> json) {
 	if (json['updated_at'] != null) {

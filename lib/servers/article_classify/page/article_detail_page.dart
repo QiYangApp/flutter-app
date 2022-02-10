@@ -1,9 +1,9 @@
-import 'package:QiYang/generated/l10n.dart';
-import 'package:QiYang/servers/article_classify/bloc/article_detail_cubit.dart';
-import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
-import 'package:QiYang/util/fluro_navigator.dart';
-import 'package:QiYang/util/image_util.dart';
-import 'package:QiYang/util/log_utils.dart';
+import 'package:qi_yang/generated/l10n.dart';
+import 'package:qi_yang/servers/article_classify/bloc/article_detail_cubit.dart';
+import 'package:qi_yang/servers/common/widget/progress_view_widget.dart';
+import 'package:qi_yang/util/fluro_navigator.dart';
+import 'package:qi_yang/util/image_util.dart';
+import 'package:qi_yang/util/log_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';

@@ -1,4 +1,4 @@
-import 'package:QiYang/common/dioConfig.dart';
+import 'package:qi_yang/common/dioConfig.dart';
 import 'package:dio/dio.dart';
 
 class VersionInterceptor extends Interceptor {

@@ -1,20 +1,20 @@
-import 'package:QiYang/apis/repository/ad_repository.dart';
-import 'package:QiYang/apis/repository/article_classify_repository.dart';
-import 'package:QiYang/apis/repository/auth_repository.dart';
-import 'package:QiYang/apis/repository/navigation_repository.dart';
-import 'package:QiYang/apis/repository/user_repository.dart';
-import 'package:QiYang/model/request/banner_request_model.dart';
-import 'package:QiYang/model/request/pagination_request_model.dart';
-import 'package:QiYang/model/request/passwd_login_request_model.dart';
-import 'package:QiYang/model/response/article_classify_response_model.dart';
-import 'package:QiYang/model/response/article_detail_response_model.dart';
-import 'package:QiYang/model/response/banner_response_model.dart';
-import 'package:QiYang/model/response/bottom_navigation_response_model.dart';
-import 'package:QiYang/model/response/guide_page_response_model.dart';
-import 'package:QiYang/model/response/start_page_response_model.dart';
-import 'package:QiYang/model/response/token_response_model.dart';
-import 'package:QiYang/model/response/user_info_response_model.dart';
-import 'package:QiYang/util/crypto_util.dart';
+import 'package:qi_yang/apis/repository/ad_repository.dart';
+import 'package:qi_yang/apis/repository/article_classify_repository.dart';
+import 'package:qi_yang/apis/repository/auth_repository.dart';
+import 'package:qi_yang/apis/repository/navigation_repository.dart';
+import 'package:qi_yang/apis/repository/user_repository.dart';
+import 'package:qi_yang/model/request/banner_request_model.dart';
+import 'package:qi_yang/model/request/pagination_request_model.dart';
+import 'package:qi_yang/model/request/passwd_login_request_model.dart';
+import 'package:qi_yang/model/response/article_classify_response_model.dart';
+import 'package:qi_yang/model/response/article_detail_response_model.dart';
+import 'package:qi_yang/model/response/banner_response_model.dart';
+import 'package:qi_yang/model/response/bottom_navigation_response_model.dart';
+import 'package:qi_yang/model/response/guide_page_response_model.dart';
+import 'package:qi_yang/model/response/start_page_response_model.dart';
+import 'package:qi_yang/model/response/token_response_model.dart';
+import 'package:qi_yang/model/response/user_info_response_model.dart';
+import 'package:qi_yang/util/crypto_util.dart';
 
 class ApiServers {
   // static ApiServers _apiServers;

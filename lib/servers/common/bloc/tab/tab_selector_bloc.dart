@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:QiYang/apis/api_servers.dart';
-import 'package:QiYang/model/response/bottom_navigation_response_model.dart';
-import 'package:QiYang/servers/common/widget/tab/tab_selector_items_widget.dart';
-import 'package:QiYang/util/log_utils.dart';
+import 'package:qi_yang/apis/api_servers.dart';
+import 'package:qi_yang/model/response/bottom_navigation_response_model.dart';
+import 'package:qi_yang/servers/common/widget/tab/tab_selector_items_widget.dart';
+import 'package:qi_yang/util/log_utils.dart';
 import 'package:bloc/bloc.dart';
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:equatable/equatable.dart';

@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/guide_page_response_model.dart';
+import 'package:qi_yang/model/response/guide_page_response_model.dart';
 
 guidePageResponseModelFromJson(GuidePageResponseModel data, Map<String, dynamic> json) {
 	if (json['updated_at'] != null) {

@@ -1,5 +1,5 @@
-import 'package:QiYang/model/response/banner_response_model.dart';
-import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
+import 'package:qi_yang/model/response/banner_response_model.dart';
+import 'package:qi_yang/servers/common/widget/progress_view_widget.dart';
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

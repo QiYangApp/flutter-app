@@ -2,7 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:QiYang/common/theme_config.dart';
+import 'package:qi_yang/common/theme_config.dart';
 
 part 'theme_state.dart';
 

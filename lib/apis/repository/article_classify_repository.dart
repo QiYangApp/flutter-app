@@ -1,9 +1,9 @@
-import 'package:QiYang/apis/apis.dart';
-import 'package:QiYang/model/request/pagination_request_model.dart';
-import 'package:QiYang/model/response/article_classify_response_model.dart';
-import 'package:QiYang/model/response/article_detail_response_model.dart';
-import 'package:QiYang/util/log_utils.dart';
-import 'package:QiYang/util/net/dio_utils.dart';
+import 'package:qi_yang/apis/apis.dart';
+import 'package:qi_yang/model/request/pagination_request_model.dart';
+import 'package:qi_yang/model/response/article_classify_response_model.dart';
+import 'package:qi_yang/model/response/article_detail_response_model.dart';
+import 'package:qi_yang/util/log_utils.dart';
+import 'package:qi_yang/util/net/dio_utils.dart';
 import 'package:dio_http_cache/dio_http_cache.dart';
 import 'package:sprintf/sprintf.dart';
 

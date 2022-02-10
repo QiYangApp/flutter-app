@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/article_detail_response_model.dart';
+import 'package:qi_yang/model/response/article_detail_response_model.dart';
 
 articleDetailResponseModelFromJson(ArticleDetailResponseModel data, Map<String, dynamic> json) {
 	if (json['article_id'] != null) {

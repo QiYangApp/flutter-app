@@ -7,8 +7,8 @@ import 'package:dio_http_cache/dio_http_cache.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:QiYang/common/common.dart';
-import 'package:QiYang/common/dioConfig.dart';
+import 'package:qi_yang/common/common.dart';
+import 'package:qi_yang/common/dioConfig.dart';
 
 import '../log_utils.dart';
 import 'base_entity.dart';
@@ -34,7 +34,7 @@ class DioInit {
 
     //缓存中间件
     defaultInterceptors.add(DioCacheManager(CacheConfig(
-        databaseName: "QiYang",
+        databaseName: "qi_yang",
         defaultMaxAge: Duration(seconds: 180),
         defaultMaxStale: Duration(seconds: 3600),
         baseUrl: DioConfig.getDomain()

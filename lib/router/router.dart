@@ -1,12 +1,12 @@
-import 'package:QiYang/servers/article_classify/article_classify_router_bind.dart';
-import 'package:QiYang/servers/common/common_router_bind.dart';
-import 'package:QiYang/servers/home/home_router_bind.dart';
-import 'package:QiYang/servers/login/login_router_bind.dart';
-import 'package:QiYang/servers/project/project_router_bind.dart';
+import 'package:qi_yang/servers/article_classify/article_classify_router_bind.dart';
+import 'package:qi_yang/servers/common/common_router_bind.dart';
+import 'package:qi_yang/servers/home/home_router_bind.dart';
+import 'package:qi_yang/servers/login/login_router_bind.dart';
+import 'package:qi_yang/servers/project/project_router_bind.dart';
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:QiYang/servers/common/page/not_fund_page.dart';
-import 'package:QiYang/servers/common/page/webview_page.dart';
+import 'package:qi_yang/servers/common/page/not_fund_page.dart';
+import 'package:qi_yang/servers/common/page/webview_page.dart';
 
 ///抽象子路由
 abstract class AbstractRouteChild {

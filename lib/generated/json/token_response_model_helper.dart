@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/token_response_model.dart';
+import 'package:qi_yang/model/response/token_response_model.dart';
 
 tokenResponseModelFromJson(TokenResponseModel data, Map<String, dynamic> json) {
 	if (json['token'] != null) {

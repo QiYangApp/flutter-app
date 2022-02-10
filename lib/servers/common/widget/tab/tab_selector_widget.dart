@@ -1,4 +1,4 @@
-import 'package:QiYang/servers/common/bloc/tab/tab_selector_bloc.dart';
+import 'package:qi_yang/servers/common/bloc/tab/tab_selector_bloc.dart';
 import 'package:custom_navigation_bar/custom_navigation_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

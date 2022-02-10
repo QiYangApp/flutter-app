@@ -1,13 +1,13 @@
-import 'package:QiYang/bloc/auth/auth_cubit.dart';
-import 'package:QiYang/router/router_path.dart';
-import 'package:QiYang/util/fluro_navigator.dart';
-import 'package:QiYang/util/image_util.dart';
-import 'package:QiYang/util/log_utils.dart';
+import 'package:qi_yang/bloc/auth/auth_cubit.dart';
+import 'package:qi_yang/router/router_path.dart';
+import 'package:qi_yang/util/fluro_navigator.dart';
+import 'package:qi_yang/util/image_util.dart';
+import 'package:qi_yang/util/log_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:QiYang/generated/l10n.dart';
+import 'package:qi_yang/generated/l10n.dart';
 
 class HomeHeaderWidget extends StatelessWidget with PreferredSizeWidget {
   @override

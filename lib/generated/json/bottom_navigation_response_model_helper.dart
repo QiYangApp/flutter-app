@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/bottom_navigation_response_model.dart';
+import 'package:qi_yang/model/response/bottom_navigation_response_model.dart';
 
 bottomNavigationResponseModelFromJson(BottomNavigationResponseModel data, Map<String, dynamic> json) {
 	if (json['updated_at'] != null) {

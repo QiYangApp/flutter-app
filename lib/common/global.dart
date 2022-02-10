@@ -4,15 +4,15 @@ import 'package:flutter_config/flutter_config.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:jpush_flutter/jpush_flutter.dart';
 import 'package:package_info_plus/package_info_plus.dart';
-import 'package:QiYang/common/common.dart';
+import 'package:qi_yang/common/common.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:QiYang/router/router.dart';
-import 'package:QiYang/util/log_utils.dart';
-import 'package:QiYang/util/net/dio_utils.dart';
-import 'package:QiYang/bloc/app_bloc_observer.dart';
-import 'package:QiYang/util/sp_util.dart';
+import 'package:qi_yang/router/router.dart';
+import 'package:qi_yang/util/log_utils.dart';
+import 'package:qi_yang/util/net/dio_utils.dart';
+import 'package:qi_yang/bloc/app_bloc_observer.dart';
+import 'package:qi_yang/util/sp_util.dart';
 import 'package:flutter_ume/flutter_ume.dart'; // UME 框架
 import 'package:flutter_ume_kit_ui/flutter_ume_kit_ui.dart'; // UI 插件包
 import 'package:flutter_ume_kit_perf/flutter_ume_kit_perf.dart'; // 性能插件包

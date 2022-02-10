@@ -1,4 +1,4 @@
-import 'package:QiYang/util/image_util.dart';
+import 'package:qi_yang/util/image_util.dart';
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';

@@ -1,6 +1,6 @@
-import 'package:QiYang/model/response/user_info_response_model.dart';
-import 'package:QiYang/servers/user/const/user_cache_key_const.dart';
-import 'package:QiYang/util/sp_util.dart';
+import 'package:qi_yang/model/response/user_info_response_model.dart';
+import 'package:qi_yang/servers/user/const/user_cache_key_const.dart';
+import 'package:qi_yang/util/sp_util.dart';
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
 

@@ -1,7 +1,7 @@
-import 'package:QiYang/router/router_path.dart';
-import 'package:QiYang/servers/project/page/project_page.dart';
+import 'package:qi_yang/router/router_path.dart';
+import 'package:qi_yang/servers/project/page/project_page.dart';
 import 'package:fluro/fluro.dart';
-import 'package:QiYang/router/router.dart';
+import 'package:qi_yang/router/router.dart';
 
 class ProjectRouteBind extends AbstractRouteChild {
   @override

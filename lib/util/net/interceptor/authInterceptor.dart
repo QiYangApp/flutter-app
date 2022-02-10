@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:QiYang/common/dioConfig.dart';
+import 'package:qi_yang/common/dioConfig.dart';
 import 'package:sp_util/sp_util.dart';
 
 //在请求同增加 Authorization

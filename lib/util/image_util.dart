@@ -1,4 +1,4 @@
-import 'package:QiYang/servers/common/widget/image_widget.dart';
+import 'package:qi_yang/servers/common/widget/image_widget.dart';
 import 'package:extended_image/extended_image.dart';
 import 'package:flutter/cupertino.dart';
 

@@ -1,5 +1,5 @@
-import 'package:QiYang/servers/splash_screen/splash_screen_const.dart';
-import 'package:QiYang/util/sp_util.dart';
+import 'package:qi_yang/servers/splash_screen/splash_screen_const.dart';
+import 'package:qi_yang/util/sp_util.dart';
 
 class GuidePageServer {
   //获取是否已读引导页

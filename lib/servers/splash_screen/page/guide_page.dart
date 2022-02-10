@@ -1,11 +1,11 @@
-import 'package:QiYang/router/router_path.dart';
-import 'package:QiYang/servers/common/widget/progress_view_widget.dart';
+import 'package:qi_yang/router/router_path.dart';
+import 'package:qi_yang/servers/common/widget/progress_view_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:QiYang/servers/splash_screen/bloc/guide_page_bloc.dart';
-import 'package:QiYang/servers/splash_screen/widget/guide_page_widget.dart';
-import 'package:QiYang/util/fluro_navigator.dart';
+import 'package:qi_yang/servers/splash_screen/bloc/guide_page_bloc.dart';
+import 'package:qi_yang/servers/splash_screen/widget/guide_page_widget.dart';
+import 'package:qi_yang/util/fluro_navigator.dart';
 
 class GuidePage extends StatefulWidget {
   @override

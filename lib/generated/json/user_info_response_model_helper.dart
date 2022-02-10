@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/user_info_response_model.dart';
+import 'package:qi_yang/model/response/user_info_response_model.dart';
 
 userInfoResponseModelFromJson(UserInfoResponseModel data, Map<String, dynamic> json) {
 	if (json['nickname'] != null) {

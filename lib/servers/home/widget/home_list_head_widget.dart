@@ -1,5 +1,5 @@
-import 'package:QiYang/generated/l10n.dart';
-import 'package:QiYang/util/hex_color.dart';
+import 'package:qi_yang/generated/l10n.dart';
+import 'package:qi_yang/util/hex_color.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

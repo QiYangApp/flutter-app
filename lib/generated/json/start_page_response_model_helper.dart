@@ -1,4 +1,4 @@
-import 'package:QiYang/model/response/start_page_response_model.dart';
+import 'package:qi_yang/model/response/start_page_response_model.dart';
 
 startPageResponseModelFromJson(StartPageResponseModel data, Map<String, dynamic> json) {
 	if (json['background_picture'] != null) {
