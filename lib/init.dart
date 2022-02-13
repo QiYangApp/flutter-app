@@ -81,7 +81,9 @@ class Init {
   }
 
   static Future<void> _registerBlocObserver() async {
-    Bloc.observer = AppBlocObserver();
+    BlocOverrides.runZoned(() {},
+      blocObserver: AppBlocObserver(),
+    );
   }
 
   //

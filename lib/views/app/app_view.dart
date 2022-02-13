@@ -9,6 +9,8 @@ import 'package:qi_yang/app/language/language_cubit.dart';
 import 'package:qi_yang/app/router/router_manage.dart';
 import 'package:qi_yang/views/home/home_view.dart';
 
+import '../../app/net/http_repository_manage.dart';
+
 //app 入口控制
 class App extends StatelessWidget {
   const App({Key? key}) : super(key: key);
@@ -46,6 +48,8 @@ class AppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    HttpRepositoryManage.test();
+
     return MaterialApp(
       debugShowCheckedModeBanner: AppConfig.hasProductEnv(),
       theme: context.watch<ThemeCubit>().state.themeData,

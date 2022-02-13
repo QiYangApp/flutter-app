@@ -1,23 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_ume/flutter_ume.dart';
 import 'package:qi_yang/app/config/app_config.dart';
-import 'package:qi_yang/app/config/net_config.dart';
 import 'package:qi_yang/app/net/http_repository_manage.dart';
 import 'package:qi_yang/init.dart';
 import 'package:qi_yang/tools/singleton/log_singleton.dart';
-import 'package:qi_yang/tools/singleton/sp_singleton.dart';
-import 'package:flutter_ume/flutter_ume.dart';
 import 'package:qi_yang/views/app/app_view.dart'; // UME 框架
 
 void main() async {
   await Init.init(() {
-    runApp(injectUMEWidget(
+    runApp(UMEWidget(
         enable: AppConfig.hasDevelopmentEnv(),
         child: ScreenUtilInit(
             designSize: const Size(375, 850), builder: () => const App())));
   });
 }
-
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -80,7 +77,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     // This method is rerun every time setState is called, for instance as done
     // by the _incrementCounter method above.
     //
