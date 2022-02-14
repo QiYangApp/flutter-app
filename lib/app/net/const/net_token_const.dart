@@ -1,4 +1,7 @@
 abstract class NetTokenConst {
   //登录授权 token
-  static const LOGIN_AUTH_TOKEN = "login_auth_token";
+  static const loginAuthToken = "login_auth_token";
+
+  //刷新 token
+  static const refreshToken = "refresh_token";
 }

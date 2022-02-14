@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 import 'package:dio/src/adapters/io_adapter.dart';
 import 'package:flutter/services.dart';
@@ -39,7 +38,7 @@ class DioManage {
   static BaseOptions _getOptions() {
     return BaseOptions(
       responseType: ResponseType.json,
-      baseUrl: NetConfig.getAppUrlSuffix(),
+      baseUrl: NetConfig.getAppUrl(),
     );
   }
 

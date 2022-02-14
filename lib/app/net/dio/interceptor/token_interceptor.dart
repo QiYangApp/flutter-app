@@ -1,28 +1,34 @@
 import 'dart:io';
 import 'package:dio/dio.dart';
+import 'package:qi_yang/app/net/const/net_token_const.dart';
+import 'package:qi_yang/app/net/const/response_format.dart';
+import 'package:qi_yang/app/net/dio/dio_manage.dart';
+import 'package:qi_yang/app/net/http_repository_manage.dart';
+import 'package:qi_yang/tools/singleton/log_singleton.dart';
+import 'package:qi_yang/tools/singleton/sp_singleton.dart';
+
 
 class TokenInterceptor extends Interceptor {
-  @override
-  void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    return super.onRequest(options, handler);
-  }
-
-  Future<String> getToken() async {
-
-    // final Map<String, String> params = <String, String>{};
-    // params['refresh_token'] = SpUtil.getString(Constant.refreshToken);
-    // try {
-    //   _tokenDio.options = DioUtils.instance.dio.options;
-    //   final Response response = await _tokenDio.post('lgn/refreshToken', data: params);
-    //   if (response.statusCode == ExceptionHandle.success) {
-    //     return json.decode(response.data.toString())['access_token'];
-    //   }
-    // } catch(e) {
-    //   Log.e('刷新Token失败！');
-    // }
-
-    return '';
-  }
+  // Future getToken() async {
+  //   final String? refreshToken = SpSingleton.getString(NetTokenConst.refreshToken);
+  //   if (refreshToken == null || refreshToken.isEmpty) {
+  //     return false;
+  //   }
+  //
+  //   HttpRepositoryManage
+  //
+  //   try {
+  //     _tokenDio.options = DioUtils.instance.dio.options;
+  //     final Response response = await _tokenDio.post('lgn/refreshToken', data: params);
+  //     if (response.statusCode == ExceptionHandle.success) {
+  //       return json.decode(response.data.toString())['access_token'];
+  //     }
+  //   } catch(e) {
+  //     Log.e('刷新Token失败！');
+  //   }
+  //
+  //   return '';
+  // }
   //
   // Future<Object> retry(Response response, String accessToken) async {
   //   // 重新请求失败接口
@@ -44,12 +50,18 @@ class TokenInterceptor extends Interceptor {
   //
   //    return response;
   // }
-  //
+
   // @override
   // Future<void> onResponse(Response response, ResponseInterceptorHandler handler) async {
-  //   if (response != null && response.statusCode == HttpStatus.unauthorized) {
-  //     Log.d('-----------自动刷新Token------------');
-  //     final Dio dio = DioUtils.instance.dio;
+  //   if (response.statusCode == HttpStatus.unauthorized) {
+  //     LogSingleton.d('-----------自动刷新Token------------');
+  //     final repository =  HttpRepositoryManage.refreshToken();
+  //
+  //     HttpRepositoryManage.refreshToken().then((value) {
+  //     });
+  //     httpRepositoryManage.refreshToken();
+  //     final Dio dio = DioManage.getDio();
+  //
   //     dio.interceptors.requestLock.lock();
   //     _tokenDio.interceptors.responseLock.lock();
   //

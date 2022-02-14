@@ -41,4 +41,12 @@ class _ApiHttpRepository implements ApiHttpRepository {
     }
     return requestOptions;
   }
+
+  @override
+  Future<BaseEntity<RefreshTokenResponseEntity>> refreshToken() {
+    // TODO: implement refreshToken
+    throw UnimplementedError();
+  }
+
+
 }

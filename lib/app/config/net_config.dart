@@ -4,9 +4,6 @@ class NetConfig {
   //域名
   static final String _domain = FlutterConfig.get('API_URL');
 
-  //后缀
-  static final String _suffix = FlutterConfig.get('API_URL_SUFFIX');
-
   //是否启用mock
   static final String _mockEnable = FlutterConfig.get('APP_MOCK_ENABLE');
 
@@ -18,11 +15,6 @@ class NetConfig {
   //获取mock状态
   static bool getMockEnable() {
     return _mockEnable == 'true';
-  }
-
-  //获取完整地址
-  static String getAppUrlSuffix() {
-    return "$_domain/$_suffix";
   }
 
   //获取 web view page address

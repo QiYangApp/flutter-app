@@ -6,7 +6,7 @@ import 'package:qi_yang/tools/singleton/sp_singleton.dart' show SpSingleton;
 class AuthInterceptor extends Interceptor {
   @override
   void onRequest(RequestOptions options, RequestInterceptorHandler handler) {
-    final String? accessToken = SpSingleton.getString(NetTokenConst.LOGIN_AUTH_TOKEN);
+    final String? accessToken = SpSingleton.getString(NetTokenConst.loginAuthToken);
     if (accessToken!.isNotEmpty) {
       options.headers['Authorization'] = 'Bearer $accessToken';
     }
