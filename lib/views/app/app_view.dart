@@ -7,6 +7,7 @@ import 'package:qi_yang/app/bloc/theme/theme_cubit.dart';
 import 'package:qi_yang/app/config/app_config.dart';
 import 'package:qi_yang/app/language/language_cubit.dart';
 import 'package:qi_yang/app/router/router_manage.dart';
+import 'package:qi_yang/tools/singleton/log_singleton.dart';
 import 'package:qi_yang/views/home/home_view.dart';
 
 import '../../app/net/http_repository_manage.dart';
@@ -48,7 +49,7 @@ class AppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    HttpRepositoryManage.test();
+    LogSingleton.d(HttpRepositoryManage.test(),1111);
 
     return MaterialApp(
       debugShowCheckedModeBanner: AppConfig.hasProductEnv(),

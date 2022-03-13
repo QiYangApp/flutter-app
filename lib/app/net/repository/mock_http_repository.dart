@@ -10,7 +10,7 @@ import 'abstract_http_repository.dart';
 class MockHttpRepository extends AbstractHttpRepository {
   static MockHttpRepository get instance => MockHttpRepository();
 
-  BaseEntity<T> _getBaseEntity<T>(dynamic data) {
+  BaseEntity<T> _getBaseEntity<T>(T data) {
     return BaseEntity.fromJson({
       ResponseFormat.code: 200,
       ResponseFormat.data: data,
@@ -24,7 +24,7 @@ class MockHttpRepository extends AbstractHttpRepository {
 
   @override
   Future<BaseEntity<TestEntity>> test() {
-    return _format<TestEntity>(TestEntity().toJson());
+    return _format<TestEntity>(TestEntity.fromJson({"test":1}));
   }
 
   @override

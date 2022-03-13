@@ -6,6 +6,8 @@ part of 'api_http_repository.dart';
 // RetrofitGenerator
 // **************************************************************************
 
+// ignore_for_file: unnecessary_brace_in_string_interps
+
 class _ApiHttpRepository implements ApiHttpRepository {
   _ApiHttpRepository(this._dio, {this.baseUrl});
 
@@ -29,6 +31,23 @@ class _ApiHttpRepository implements ApiHttpRepository {
     return value;
   }
 
+  @override
+  Future<BaseEntity<RefreshTokenResponseEntity>> refreshToken() async {
+    const _extra = <String, dynamic>{};
+    final queryParameters = <String, dynamic>{};
+    final _headers = <String, dynamic>{};
+    final _data = <String, dynamic>{};
+    final _result = await _dio.fetch<Map<String, dynamic>>(
+        _setStreamType<BaseEntity<RefreshTokenResponseEntity>>(
+            Options(method: 'GET', headers: _headers, extra: _extra)
+                .compose(_dio.options, '/test1',
+                    queryParameters: queryParameters, data: _data)
+                .copyWith(baseUrl: baseUrl ?? _dio.options.baseUrl)));
+    final value =
+        BaseEntity<RefreshTokenResponseEntity>.fromJson(_result.data!);
+    return value;
+  }
+
   RequestOptions _setStreamType<T>(RequestOptions requestOptions) {
     if (T != dynamic &&
         !(requestOptions.responseType == ResponseType.bytes ||
@@ -41,12 +60,4 @@ class _ApiHttpRepository implements ApiHttpRepository {
     }
     return requestOptions;
   }
-
-  @override
-  Future<BaseEntity<RefreshTokenResponseEntity>> refreshToken() {
-    // TODO: implement refreshToken
-    throw UnimplementedError();
-  }
-
-
 }

@@ -6,6 +6,7 @@ class BaseEntity<T> {
   late int code;
   late String message;
   late T data;
+  late List<dynamic> list;
   late PaginationEntity paginationEntity;
 
   BaseEntity.fromJson(Map<String, dynamic> json) {
@@ -13,7 +14,12 @@ class BaseEntity<T> {
     message = json[ResponseFormat.message] as String;
 
     if (json.containsKey(ResponseFormat.data)) {
-      data = JsonConvert.fromJsonAsT(json[ResponseFormat.data]);
+      data = jsonConvert.convert<T>(json[ResponseFormat.data]) as T;
+    }
+
+    //列表数据
+    if (json.containsKey(ResponseFormat.list)) {
+      list = JsonConvert.fromJsonAsT(json[ResponseFormat.list]);
     }
 
     //分页
@@ -21,6 +27,10 @@ class BaseEntity<T> {
       paginationEntity =
           PaginationEntity.fromJson(json[ResponseFormat.pagination]);
     }
+  }
+
+  _format(T data) {
+    var a = 1;
   }
 
   @override

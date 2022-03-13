@@ -3,7 +3,7 @@ import 'package:qi_yang/models/response/test_entity.dart';
 
 TestEntity $TestEntityFromJson(Map<String, dynamic> json) {
 	final TestEntity testEntity = TestEntity();
-	final int? test = jsonConvert.convert<int>(json['test']);
+	final String? test = jsonConvert.convert<String>(json['test']);
 	if (test != null) {
 		testEntity.test = test;
 	}

@@ -33,5 +33,6 @@ abstract class ApiHttpRepository extends AbstractHttpRepository {
   Future<BaseEntity<TestEntity>> test();
 
   @override
+  @GET("/test1")
   Future<BaseEntity<RefreshTokenResponseEntity>> refreshToken();
 }

@@ -59,7 +59,15 @@ class Init {
   //app 平台信息
   static void _platformInfo() async {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
-    LogSingleton.i(packageInfo);
+    LogSingleton.i(
+      {
+        "app name:" + packageInfo.appName,
+        "app packageName:" + packageInfo.packageName,
+        "app buildNumber:" + packageInfo.buildNumber,
+        "app version:" + packageInfo.version,
+        "app buildSignature:" + packageInfo.buildSignature,
+      }
+    );
   }
 
   //本地文件存储
