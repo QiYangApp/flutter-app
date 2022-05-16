@@ -30,7 +30,7 @@ dependencies:
   flutter:
     sdk: flutter
   #网络请求
-  dio: ^4.0.4
+  dio: ^4.0.6
 
   # lock 同步存在
   synchronized: ^3.0.0
@@ -39,13 +39,13 @@ dependencies:
   flutter_config: ^2.0.0
 
   #本地文件存储
-  shared_preferences: ^2.0.13
+  shared_preferences: ^2.0.15
 
   #获取当前平台信息
-  package_info_plus: ^1.4.0
+  package_info_plus: ^1.4.2
 
   #设备信息
-  device_info_plus: ^3.2.2
+  device_info_plus: ^3.2.3
 
   #图片缓存
   cached_network_image: ^3.2.0
@@ -63,13 +63,13 @@ dependencies:
   intl: ^0.17.0
 
   #数字金额显示
-  decimal: ^2.1.0
+  decimal: ^2.2.0
 
   #路由
   fluro: ^2.0.3
 
   #路径获取
-  path_provider: ^2.0.9
+  path_provider: ^2.0.10
   #ui
   #flui: ^0.9.2
 
@@ -78,7 +78,7 @@ dependencies:
   cupertino_icons: ^1.0.4
 
   #屏幕适配
-  flutter_screenutil: ^5.3.1
+  flutter_screenutil: ^5.5.2
 
   #bloc
   flutter_bloc: ^8.0.1
@@ -91,13 +91,13 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
 
   #web view
-  webview_flutter: ^3.0.1
+  webview_flutter: ^3.0.4
 
   #h5 链接页面
-  url_launcher: ^6.0.20
+  url_launcher: ^6.1.2
 
   #极光推送
-  jpush_flutter: ^2.2.3
+  jpush_flutter: ^2.2.5
 
 
 
@@ -113,7 +113,7 @@ dev_dependencies:
   flutter_ume_kit_console: ^0.3.0  # null-safety 版本: ^0.2.1
   flutter_ume_kit_dio: ^0.3.0  # 仅支持 null-safety 版本
   retrofit_generator: any
-  build_runner: ^2.1.7
+  build_runner: ^2.1.10
   json_serializable: any
 
   #logger - 控制台日志

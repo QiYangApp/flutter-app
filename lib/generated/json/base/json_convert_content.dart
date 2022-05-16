@@ -7,6 +7,8 @@ import 'package:qi_yang/models/response/refresh_token_response_entity.dart';
 import 'package:qi_yang/generated/json/refresh_token_response_entity.g.dart';
 import 'package:qi_yang/models/response/test_entity.dart';
 import 'package:qi_yang/generated/json/test_entity.g.dart';
+import 'package:qi_yang/models/response/user_info_entity.dart';
+import 'package:qi_yang/generated/json/user_info_entity.g.dart';
 
 JsonConvert jsonConvert = JsonConvert();
 
@@ -83,6 +85,9 @@ class JsonConvert {
 		if(type == (TestEntity).toString()){
 			return TestEntity.fromJson(json) as M;
 		}
+		if(type == (UserInfoEntity).toString()){
+			return UserInfoEntity.fromJson(json) as M;
+		}
 
 		print("$type not found");
 	
@@ -96,6 +101,9 @@ class JsonConvert {
 		}
 		if(<TestEntity>[] is M){
 			return data.map<TestEntity>((Map<String, dynamic> e) => TestEntity.fromJson(e)).toList() as M;
+		}
+		if(<UserInfoEntity>[] is M){
+			return data.map<UserInfoEntity>((Map<String, dynamic> e) => UserInfoEntity.fromJson(e)).toList() as M;
 		}
 
 		print("${M.toString()} not found");

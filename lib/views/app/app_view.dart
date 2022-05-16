@@ -49,7 +49,7 @@ class AppView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    LogSingleton.d(HttpRepositoryManage.test(),1111);
+    LogSingleton.d(HttpRepositoryManage.test(), 1111);
 
     return MaterialApp(
       debugShowCheckedModeBanner: AppConfig.hasProductEnv(),
