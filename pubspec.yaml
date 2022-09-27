@@ -18,7 +18,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <3.3.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,74 +30,74 @@ dependencies:
   flutter:
     sdk: flutter
   #网络请求
-  dio: ^4.0.4
+  dio: ^4.0.6
 
   # lock 同步存在
-  synchronized: ^3.0.0
+  synchronized: ^3.0.0+3
 
   #加载配置文件
   flutter_config: ^2.0.0
 
   #本地文件存储
-  shared_preferences: ^2.0.13
+  shared_preferences: ^2.0.15
 
   #获取当前平台信息
-  package_info_plus: ^1.4.0
+  package_info_plus: ^1.4.3+1
 
   #设备信息
-  device_info_plus: ^3.2.2
+  device_info_plus: ^4.1.2
 
   #图片缓存
-  cached_network_image: ^3.2.0
+  cached_network_image: ^3.2.2
 
   #权限申请
-  permission_handler: ^9.2.0
+  permission_handler: ^10.0.1
 
   #转圈插件
   flutter_spinkit: ^5.1.0
 
   #Toast插件
-  flutter_easyloading: ^3.0.3
+  flutter_easyloading: ^3.0.5
 
   #国际化
   intl: ^0.17.0
 
   #数字金额显示
-  decimal: ^2.1.0
+  decimal: ^2.3.0
 
   #路由
   fluro: ^2.0.3
 
   #路径获取
-  path_provider: ^2.0.9
+  path_provider: ^2.0.11
   #ui
   #flui: ^0.9.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.4
+  cupertino_icons: ^1.0.5
 
   #屏幕适配
-  flutter_screenutil: ^5.3.1
+  flutter_screenutil: ^5.5.4
 
   #bloc
-  flutter_bloc: ^8.0.1
-  equatable: ^2.0.3
+  flutter_bloc: ^8.1.1
+  equatable: ^2.0.5
 
   #布局
-  flutter_staggered_grid_view: ^0.6.1
+  flutter_staggered_grid_view: ^0.6.2
 
   #底部滑动
   smooth_page_indicator: ^1.0.0+2
 
   #web view
-  webview_flutter: ^3.0.1
+  webview_flutter: ^3.0.4
 
   #h5 链接页面
-  url_launcher: ^6.0.20
+  url_launcher: ^6.1.5
 
   #极光推送
-  jpush_flutter: ^2.2.3
+  jpush_flutter: ^2.3.8
 
 
 
@@ -105,15 +105,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_ume: ^0.3.0+1  # null-safety 版本: ^0.2.1
-  flutter_ume_kit_ui: ^0.3.0+1  # null-safety 版本: ^0.2.1
-  flutter_ume_kit_device: ^0.3.0  # null-safety 版本: ^0.2.1
-  flutter_ume_kit_perf: ^0.3.0  # null-safety 版本: ^0.2.1
-  flutter_ume_kit_show_code: ^0.3.0  # null-safety 版本: ^0.2.1
-  flutter_ume_kit_console: ^0.3.0  # null-safety 版本: ^0.2.1
-  flutter_ume_kit_dio: ^0.3.0  # 仅支持 null-safety 版本
+  flutter_ume: ^1.1.1
+  flutter_ume_kit_ui: ^1.0.0
+  flutter_ume_kit_device: ^1.0.0
+  flutter_ume_kit_perf: ^1.0.0
+  flutter_ume_kit_show_code: ^1.0.0
+  flutter_ume_kit_console: ^1.0.0
+  flutter_ume_kit_dio: ^1.0.0
   retrofit_generator: any
-  build_runner: ^2.1.7
+  build_runner: ^2.2.1
   json_serializable: any
 
   #logger - 控制台日志
@@ -124,10 +124,10 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^1.0.4
+  flutter_lints: ^2.0.1
 
   #首屏
-  flutter_native_splash: ^2.1.0
+  flutter_native_splash: ^2.2.10+1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

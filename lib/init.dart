@@ -33,6 +33,7 @@ class Init {
     await _registerUme(DioManage.getDio());
     await _registerBlocObserver();
     await _registerRoute();
+    await _registerView();
 
     _registerJPush();
     _platformInfo();
@@ -41,13 +42,8 @@ class Init {
   }
 
   //页面适配
-  static Future<void> registerView(BuildContext context) async {
-    ScreenUtil.init(
-        BoxConstraints(
-            maxWidth: MediaQuery.of(context).size.width,
-            maxHeight: MediaQuery.of(context).size.height),
-        designSize: const Size(360, 690),
-        orientation: Orientation.portrait);
+  static Future<void> _registerView() async {
+    await ScreenUtil.ensureScreenSize();
   }
 
   //网络部分
@@ -61,11 +57,11 @@ class Init {
     PackageInfo packageInfo = await PackageInfo.fromPlatform();
     LogSingleton.i(
       {
-        "app name:" + packageInfo.appName,
-        "app packageName:" + packageInfo.packageName,
-        "app buildNumber:" + packageInfo.buildNumber,
-        "app version:" + packageInfo.version,
-        "app buildSignature:" + packageInfo.buildSignature,
+        "app name:${packageInfo.appName}",
+        "app packageName:${packageInfo.packageName}",
+        "app buildNumber:${packageInfo.buildNumber}",
+        "app version:${packageInfo.version}",
+        "app buildSignature:${packageInfo.buildSignature}",
       }
     );
   }

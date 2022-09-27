@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:qi_yang/app/bloc/app_state/app_state_bloc.dart';
 import 'package:qi_yang/app/bloc/bottom_tab/bottom_tab_bloc.dart';
 import 'package:qi_yang/app/bloc/theme/theme_cubit.dart';
@@ -50,6 +51,7 @@ class AppView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     LogSingleton.d(HttpRepositoryManage.test(),1111);
+    ScreenUtil.init(context);
 
     return MaterialApp(
       debugShowCheckedModeBanner: AppConfig.hasProductEnv(),
