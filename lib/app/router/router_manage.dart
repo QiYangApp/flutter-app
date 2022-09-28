@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:qi_yang/app/config/net_config.dart';
+import 'package:qi_yang/app/router/abstract_route_child.dart';
 
 class RouterManage {
   RouterManage._internal();
@@ -21,6 +22,10 @@ class RouterManage {
 
   static GlobalKey<NavigatorState> getNavigatorStateKey() {
     return _instance._navigatorKey;
+  }
+
+  static void addRoute(AbstractRouteChild child) {
+    child.combination(_instance._router);
   }
 
   static void setNotFundHandle(Handler handler) {

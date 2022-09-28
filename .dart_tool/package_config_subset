@@ -1,4 +1,5 @@
 _fe_analyzer_shared
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-47.0.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-47.0.0/lib/
@@ -14,6 +15,23 @@ args
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/args-2.3.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/args-2.3.1/lib/
+=======
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-38.0.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/_fe_analyzer_shared-38.0.0/lib/
+analyzer
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-3.4.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/analyzer-3.4.1/lib/
+archive
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/archive-3.3.0/lib/
+args
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/args-2.3.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/args-2.3.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 async
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/async-2.9.0/
@@ -24,22 +42,34 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/basics-0.6.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/basics-0.6.0/lib/
 bloc
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-8.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-8.1.0/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-8.0.3/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/bloc-8.0.3/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 boolean_selector
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/boolean_selector-2.1.0/lib/
 build
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build-2.3.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build-2.3.1/lib/
+=======
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build-2.3.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build-2.3.0/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 build_config
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_config-1.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_config-1.1.0/lib/
 build_daemon
 2.14
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-3.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-3.1.0/lib/
 build_resolvers
@@ -50,6 +80,18 @@ build_runner
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-2.2.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-2.2.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-3.1.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build_daemon-3.1.0/lib/
+build_resolvers
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build_resolvers-2.0.8/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build_resolvers-2.0.8/lib/
+build_runner
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-2.1.10/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner-2.1.10/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 build_runner_core
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/build_runner_core-7.2.4/
@@ -60,8 +102,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-5.1
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/built_collection-5.1.1/lib/
 built_value
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.4.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.4.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.3.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/built_value-8.3.0/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 cached_network_image
 2.18
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/cached_network_image-3.2.2/
@@ -80,8 +127,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.2.1/lib/
 checked_yaml
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/checked_yaml-2.0.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 clock
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.1/
@@ -100,17 +152,23 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/convert-3.0.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/convert-3.0.2/lib/
 crypto
 2.14
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2/lib/
 csslib
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/csslib-0.17.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/csslib-0.17.2/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 cupertino_icons
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.5/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.5/lib/
 dart_style
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.2.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.2.4/lib/
@@ -118,6 +176,15 @@ decimal
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/decimal-2.3.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/decimal-2.3.0/lib/
+=======
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.2.3/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/dart_style-2.2.3/lib/
+decimal
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/decimal-2.2.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/decimal-2.2.0/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 device_info
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info-2.0.3/
@@ -128,16 +195,26 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_platform
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_platform_interface-2.0.1/lib/
 device_info_plus
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus-4.1.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus-4.1.2/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus-3.2.3/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus-3.2.3/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 device_info_plus_linux
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_linux-3.0.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_linux-3.0.0/lib/
 device_info_plus_macos
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_macos-3.0.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_macos-3.0.0/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_macos-2.2.3/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_macos-2.2.3/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 device_info_plus_platform_interface
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_platform_interface-3.0.0/
@@ -152,8 +229,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_win
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_plus_windows-4.1.0/lib/
 dio
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.6/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.6/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.6/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.6/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 equatable
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/equatable-2.0.5/
@@ -163,9 +245,15 @@ fake_async
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.3.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/fake_async-1.3.1/lib/
 ffi
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-2.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-2.0.1/lib/
+=======
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.2.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/ffi-1.2.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 file
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/file-6.1.4/
@@ -176,8 +264,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/file_utils-1.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/file_utils-1.0.1/lib/
 fixnum
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/fixnum-1.0.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 fluro
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/fluro-2.0.3/
@@ -188,8 +281,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-8.1.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_bloc-8.1.1/lib/
 flutter_blurhash
 2.15
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.7.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.7.0/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.6.8/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_blurhash-0.6.8/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 flutter_cache_manager
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_cache_manager-3.3.0/
@@ -207,6 +305,7 @@ flutter_lints
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_lints-2.0.1/lib/
 flutter_native_splash
+<<<<<<< HEAD
 2.18
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.2.10+1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.2.10+1/lib/
@@ -214,6 +313,15 @@ flutter_screenutil
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.5.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.5.4/lib/
+=======
+2.15
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.1.6/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_native_splash-2.1.6/lib/
+flutter_screenutil
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.5.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_screenutil-5.5.2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 flutter_spinkit
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_spinkit-5.1.0/
@@ -283,9 +391,15 @@ http_parser
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.1/lib/
 image
+<<<<<<< HEAD
 2.15
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.2.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.2.0/lib/
+=======
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.1.3/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/image-3.1.3/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 intl
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0/
@@ -296,13 +410,19 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/io-1.0.3/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/io-1.0.3/lib/
 jpush_flutter
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/jpush_flutter-2.3.8/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/jpush_flutter-2.3.8/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/jpush_flutter-2.2.5/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/jpush_flutter-2.2.5/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 js
 2.16
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.4/lib/
 json_annotation
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.7.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.7.0/lib/
@@ -310,6 +430,19 @@ json_serializable
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-6.4.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-6.4.0/lib/
+=======
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.5.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.5.0/lib/
+json_serializable
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-6.2.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/json_serializable-6.2.0/lib/
+lint
+2.15
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/lint-1.8.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/lint-1.8.2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 lints
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/lints-2.0.0/
@@ -336,8 +469,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.8.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/meta-1.8.0/lib/
 mime
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.2/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/mime-1.0.2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 nested
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/nested-1.0.0/
@@ -352,12 +490,21 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_config-2.1.0
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_config-2.1.0/lib/
 package_info_plus
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus-1.4.3+1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus-1.4.3+1/lib/
 package_info_plus_linux
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_linux-1.0.5/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_linux-1.0.5/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus-1.4.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus-1.4.2/lib/
+package_info_plus_linux
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_linux-1.0.5/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_linux-1.0.5/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 package_info_plus_macos
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_macos-1.3.0/
@@ -368,18 +515,28 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_pl
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_platform_interface-1.0.2/lib/
 package_info_plus_web
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_web-1.0.5/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_web-1.0.5/lib/
 package_info_plus_windows
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_windows-2.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_windows-2.1.0/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_web-1.0.5/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_web-1.0.5/lib/
+package_info_plus_windows
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_windows-1.0.5/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/package_info_plus_windows-1.0.5/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 path
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.2/lib/
 path_provider
 2.14
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.11/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.11/lib/
 path_provider_android
@@ -406,6 +563,34 @@ path_provider_windows
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.1.3/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.1.3/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.10/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider-2.0.10/lib/
+path_provider_android
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.14/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_android-2.0.14/lib/
+path_provider_ios
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.9/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_ios-2.0.9/lib/
+path_provider_linux
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.6/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_linux-2.1.6/lib/
+path_provider_macos
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.6/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_macos-2.0.6/lib/
+path_provider_platform_interface
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.4/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.4/lib/
+path_provider_windows
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.6/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.6/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 pedantic
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/
@@ -420,8 +605,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_a
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_android-10.0.0/lib/
 permission_handler_apple
 2.15
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_apple-9.0.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_apple-9.0.4/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_apple-9.0.4/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_apple-9.0.4/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 permission_handler_platform_interface
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.1/
@@ -456,20 +646,34 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/provider-6.0.3/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/provider-6.0.3/lib/
 pub_semver
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.1.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.1.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.1.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/pub_semver-2.1.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 pubspec_parse
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-1.2.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/pubspec_parse-1.2.1/lib/
 quiver
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0/lib/
 rational
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/rational-2.2.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/rational-2.2.0/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-3.1.0/lib/
+rational
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/rational-2.2.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/rational-2.2.0/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 retrofit
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/retrofit-3.0.1+1/
@@ -488,6 +692,7 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/share-2.0.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/share-2.0.4/lib/
 shared_preferences
 2.14
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.15/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.15/lib/
 shared_preferences_android
@@ -506,12 +711,33 @@ shared_preferences_macos
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.4/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.15/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-2.0.15/lib/
+shared_preferences_android
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.12/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_android-2.0.12/lib/
+shared_preferences_ios
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_ios-2.1.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_ios-2.1.1/lib/
+shared_preferences_linux
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-2.1.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_linux-2.1.1/lib/
+shared_preferences_macos
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.4/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_macos-2.0.4/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 shared_preferences_platform_interface
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-2.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_platform_interface-2.1.0/lib/
 shared_preferences_web
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.4/lib/
 shared_preferences_windows
@@ -522,6 +748,18 @@ shelf
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.4.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.4.0/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.4/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_web-2.0.4/lib/
+shared_preferences_windows
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-2.1.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences_windows-2.1.1/lib/
+shelf
+2.16
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.3.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/shelf-1.3.0/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 shelf_web_socket
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/shelf_web_socket-1.0.2/
@@ -531,6 +769,7 @@ smooth_page_indicator
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/smooth_page_indicator-1.0.0+2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/smooth_page_indicator-1.0.0+2/lib/
 source_gen
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-1.2.5/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-1.2.5/lib/
@@ -538,11 +777,21 @@ source_helper
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/source_helper-1.3.3/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/source_helper-1.3.3/lib/
+=======
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-1.2.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/source_gen-1.2.2/lib/
+source_helper
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/source_helper-1.3.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/source_helper-1.3.2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 source_span
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.9.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/source_span-1.9.0/lib/
 sqflite
+<<<<<<< HEAD
 2.18
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.1.0/lib/
@@ -550,6 +799,15 @@ sqflite_common
 2.16
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.3.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.3.0/lib/
+=======
+2.16
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.2+1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite-2.0.2+1/lib/
+sqflite_common
+2.16
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.2.1+1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/sqflite_common-2.2.1+1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 stack_trace
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/stack_trace-1.10.0/
@@ -568,8 +826,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.1
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/string_scanner-1.1.1/lib/
 synchronized
 2.14
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0+3/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0+3/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0+2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/synchronized-3.0.0+2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 system_info
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/system_info-1.0.1/
@@ -604,6 +867,7 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/universal_io-2.0.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/universal_io-2.0.4/lib/
 url_launcher
 2.14
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.5/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.5/lib/
 url_launcher_android
@@ -622,12 +886,33 @@ url_launcher_macos
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.1.2/lib/
+url_launcher_android
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.17/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_android-6.0.17/lib/
+url_launcher_ios
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.16/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_ios-6.0.16/lib/
+url_launcher_linux
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-3.0.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_linux-3.0.1/lib/
+url_launcher_macos
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_macos-3.0.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 url_launcher_platform_interface
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_platform_interface-2.1.0/lib/
 url_launcher_web
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.13/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.13/lib/
 url_launcher_windows
@@ -638,6 +923,18 @@ uuid
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.6/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.6/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.11/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_web-2.0.11/lib/
+url_launcher_windows
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-3.0.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher_windows-3.0.1/lib/
+uuid
+2.12
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.6/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/uuid-3.0.6/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 vector_math
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.2/
@@ -652,6 +949,7 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/watcher-1.0.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/watcher-1.0.1/lib/
 web_socket_channel
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.2.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.2.0/lib/
 webview_flutter
@@ -662,11 +960,24 @@ webview_flutter_android
 2.14
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_android-2.10.2/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_android-2.10.2/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.2.0/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/web_socket_channel-2.2.0/lib/
+webview_flutter
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-3.0.4/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter-3.0.4/lib/
+webview_flutter_android
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_android-2.8.8/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_android-2.8.8/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 webview_flutter_platform_interface
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_platform_interface-1.9.3/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_platform_interface-1.9.3/lib/
 webview_flutter_wkwebview
+<<<<<<< HEAD
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_wkwebview-2.9.4/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_wkwebview-2.9.4/lib/
@@ -674,6 +985,15 @@ win32
 2.17
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/win32-3.0.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/win32-3.0.0/lib/
+=======
+2.14
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_wkwebview-2.7.5/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/webview_flutter_wkwebview-2.7.5/lib/
+win32
+2.15
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.5.2/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/win32-2.5.2/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 xdg_directories
 2.12
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/xdg_directories-0.2.0+2/
@@ -684,8 +1004,13 @@ file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/xml-6.1.0/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/xml-6.1.0/lib/
 yaml
 2.12
+<<<<<<< HEAD
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.1/
 file:///C:/tools/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.1/lib/
+=======
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.1/
+file:///usr/local/Caskroom/flutter/2.10.2/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-3.1.1/lib/
+>>>>>>> fa539b14b4d6ef237d0f08c7365a0bebef87a7d6
 sky_engine
 2.12
 file:///C:/tools/flutter/bin/cache/pkg/sky_engine/
